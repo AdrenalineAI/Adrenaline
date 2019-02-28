@@ -20,20 +20,19 @@ env:
     - SDK_URL=https://bitcoincore.org/depends-sources/sdks
     - PYTHON_DEBUG=1
     - WINEDEBUG=fixme-all
-    - OPENBLOCK_SCRYPT=0
   matrix:
 # ARM
-    - HOST=arm-linux-gnueabihf PACKAGES="g++-arm-linux-gnueabihf" DEP_OPTS="NO_QT=1" CHECK_DOC=0 GOAL="install" BITCOIN_CONFIG="--enable-glibc-back-compat --enable-reduce-exports"
+    - HOST=arm-linux-gnueabihf PACKAGES="g++-arm-linux-gnueabihf" DEP_OPTS="" CHECK_DOC=0 GOAL="install" BITCOIN_CONFIG="--enable-glibc-back-compat --enable-reduce-exports"
 # Win32
-    - HOST=i686-w64-mingw32 DPKG_ADD_ARCH="i386" DEP_OPTS="NO_QT=1" PACKAGES="python3 python3-dev python3-pip nsis g++-mingw-w64-i686 wine1.6 bc" RUN_TESTS=true GOAL="install" BITCOIN_CONFIG="--enable-reduce-exports" OPENBLOCK_SCRYPT=1
+    - HOST=i686-w64-mingw32 DPKG_ADD_ARCH="i386" DEP_OPTS="" PACKAGES="python3 python3-dev python3-pip nsis g++-mingw-w64-i686 wine1.6 bc" RUN_TESTS=false GOAL="install" BITCOIN_CONFIG="--enable-reduce-exports" OPENBLOCK_SCRYPT=1
 # 32-bit + dash
-    - HOST=i686-pc-linux-gnu PACKAGES="g++-multilib bc python3-zmq python3-dev python3-pip" DEP_OPTS="NO_QT=1" RUN_TESTS=true GOAL="install" BITCOIN_CONFIG="--enable-zmq --enable-glibc-back-compat --enable-reduce-exports LDFLAGS=-static-libstdc++" USE_SHELL="/bin/dash" OPENBLOCK_SCRYPT=1
+    - HOST=i686-pc-linux-gnu PACKAGES="g++-multilib bc python3-zmq python3-dev python3-pip" DEP_OPTS="" RUN_TESTS=false GOAL="install" BITCOIN_CONFIG="--enable-zmq --enable-glibc-back-compat --enable-reduce-exports LDFLAGS=-static-libstdc++" USE_SHELL="/bin/dash" OPENBLOCK_SCRYPT=1
 # Win64
-    - HOST=x86_64-w64-mingw32 DPKG_ADD_ARCH="i386" DEP_OPTS="NO_QT=1" PACKAGES="python3 python3-dev python3-pip nsis g++-mingw-w64-x86-64 wine1.6 bc" RUN_TESTS=true GOAL="install" BITCOIN_CONFIG="--enable-reduce-exports --enable-sse2" OPENBLOCK_SCRYPT=1
+    - HOST=x86_64-w64-mingw32 DPKG_ADD_ARCH="i386" DEP_OPTS="" PACKAGES="python3 python3-dev python3-pip nsis g++-mingw-w64-x86-64 wine1.6 bc" RUN_TESTS=false GOAL="install" BITCOIN_CONFIG="--enable-reduce-exports --enable-sse2" OPENBLOCK_SCRYPT=1
 # x86_64 Linux (uses qt5 dev package instead of depends Qt to speed up build and avoid timeout)
-    - HOST=x86_64-unknown-linux-gnu PACKAGES="python3-zmq python3-dev python3-pip qtbase5-dev qttools5-dev-tools protobuf-compiler libdbus-1-dev libharfbuzz-dev" DEP_OPTS="NO_QT=1 NO_UPNP=1 DEBUG=1 ALLOW_HOST_PACKAGES=1" RUN_TESTS=true GOAL="install" BITCOIN_CONFIG="--enable-zmq --with-gui=qt5 --enable-glibc-back-compat --enable-reduce-exports --enable-sse2 CPPFLAGS=-DDEBUG_LOCKORDER" OPENBLOCK_SCRYPT=1
+    - HOST=x86_64-unknown-linux-gnu PACKAGES="python3-zmq python3-dev python3-pip qtbase5-dev qttools5-dev-tools protobuf-compiler libdbus-1-dev libharfbuzz-dev" DEP_OPTS="" RUN_TESTS=false GOAL="install" BITCOIN_CONFIG="--enable-zmq --with-gui=qt5 --enable-glibc-back-compat --enable-reduce-exports --enable-sse2 CPPFLAGS=-DDEBUG_LOCKORDER" OPENBLOCK_SCRYPT=1
 # x86_64 Linux, No wallet
-    - HOST=x86_64-unknown-linux-gnu PACKAGES="python3 python3-dev python3-pip" DEP_OPTS="NO_WALLET=1" DEP_OPTS="NO_WALLET=1" RUN_TESTS=true GOAL="install" BITCOIN_CONFIG="--enable-glibc-back-compat --enable-reduce-exports --enable-sse2" OPENBLOCK_SCRYPT=1
+    - HOST=x86_64-unknown-linux-gnu PACKAGES="python3 python3-dev python3-pip" DEP_OPTS="" RUN_TESTS=false GOAL="install" BITCOIN_CONFIG="--enable-glibc-back-compat --enable-reduce-exports --enable-sse2" OPENBLOCK_SCRYPT=1
 # Cross-Mac
     - HOST=x86_64-apple-darwin11 PACKAGES="cmake imagemagick libcap-dev librsvg2-bin libz-dev libbz2-dev libtiff-tools python-dev" BITCOIN_CONFIG=" BITCOIN_CONFIG="--enable-gui --enable-reduce-exports --enable-sse2" OSX_SDK=10.11 GOAL="deploy"
 
@@ -43,7 +42,6 @@ install:
     - if [ -n "$DPKG_ADD_ARCH" ]; then sudo dpkg --add-architecture "$DPKG_ADD_ARCH" ; fi
     - if [ -n "$PACKAGES" ]; then travis_retry sudo apt-get update; fi
     - if [ -n "$PACKAGES" ]; then travis_retry sudo apt-get install --no-install-recommends --no-upgrade -qq $PACKAGES; fi
-    - if [ "$OPENBLOCK_SCRYPT" = 1 ]; then travis_retry sudo pip3 install openblock_scrypt; fi
 before_script:
     - if [ "$TRAVIS_EVENT_TYPE" = "pull_request" ]; then contrib/devtools/commit-script-check.sh $TRAVIS_COMMIT_RANGE; fi
     - unset CC; unset CXX
@@ -67,10 +65,29 @@ script:
     - cd openblock-$HOST
     - ./configure --cache-file=../config.cache $BITCOIN_CONFIG_ALL $BITCOIN_CONFIG || ( cat config.log && false)
     - make $MAKEJOBS $GOAL || ( echo "Build failure. Verbose build follows." && make $GOAL V=1 ; false )
+    - if [ -n "$OSX_SDK" ]; then cd .. ; fi
+    - if [ -n "$OSX_SDK" ]; then mkdir out; fi
+    - if [ -n "$OSX_SDK" ]; then mkdir out/$TRAVIS_PULL_REQUEST; fi
+    - if [ -n "$OSX_SDK" ]; then mkdir out/$TRAVIS_PULL_REQUEST/$TRAVIS_JOB_NUMBER-$HOST; fi
+    - if [ -n "$OSX_SDK" ]; then mkdir ${OUTDIR}/bin; fi
+    - if [ -n "$OSX_SDK" ]; then cp -rf build/Openblock-Qt.app ${OUTDIR}/bin; fi
+    - if [ -n "$OSX_SDK" ]; then cp -rf build/Openblock-Core.dmg ${OUTDIR}/bin; fi
     - export LD_LIBRARY_PATH=$TRAVIS_BUILD_DIR/depends/$HOST/lib
+    - ls -la
+    - ls -la ${OUTDIR}/bin
     - if [ "$RUN_TESTS" = "true" ]; then travis_wait 30 make $MAKEJOBS check VERBOSE=1; fi
     - if [ "$TRAVIS_EVENT_TYPE" = "cron" ]; then extended="--extended --exclude pruning,dbcrash"; fi
     - if [ "$RUN_TESTS" = "true" ]; then test/functional/test_runner.py --coverage --quiet ${extended}; fi
 after_script:
     - echo $TRAVIS_COMMIT_RANGE
     - echo $TRAVIS_COMMIT_LOG
+before_deploy: cd ${OUTDIR}/../ && tar -zcvf openblock-$HOST.tar.gz ${OUTDIR}
+deploy:
+  skip_cleanup: true
+  provider: releases
+  api_key:
+    secure: qIy6+q/eTBobBUuA/Mat9n86cDBwaGn7FgQYzBUjNVGJLyT5k3DRyH8ZcKCHkI+Xbnhnc6sZxlFfyFyz/XMAGD6fubT0tOlPmmXaWhjf/g8KGiFS/n6hj6hzL2XGgIrbw1vb89q8ORuNmcG6i1ks9Ev/LhVQ1X9zhnRctyo6BUovpYO5HuG7rtlkDdg/fMBLISXmFFkD/3y37Te+oyTq+FR/gMepxg75zW4kkVsA5jP816OVlctLEDs84K9N0Aqe60vY4oCCKzYSkLqxsN1SVI7B+skeP/dFoBakqmjxL/3JOK2HVv7HyXXkSW8NjmIDAIBNW1OFiVUVk5h0a/iGPjN58b2EIUWvM75F18KelLAzif+Ovu510PyoF6aDxF16RymlokP3j2l3QeQTc7NiLCqzzGAgR+HNSziKdBZPZfpGzLNk/1Kk5l/uUjVM2x4ehq0nvddKz9v/nEiRbvPYu0lZyL61QcGmf0ZYGMOkLczs5R2ddNfUaUKknw2Oy5ZydBfWaP+SPLmz/OpTDHKaDkYuCUJ9caO7srQYCN6qkUfRGTq+UJ67IrXbVQpdSe0rwKQKpXUtlTG3YBwlToasvDbzagrF/UJha2cGLq90y44BaHr6bQjgokw8NXSKrrHkh0mPoBW8MWpKqm2n356YDLktPyvTq6CsEiZsfZxT7vg=
+  file:
+    - ${OUTDIR}/../openblock-$HOST.tar.gz
+  on:
+    repo: openblock-org/openblock
