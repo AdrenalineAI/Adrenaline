@@ -75,7 +75,7 @@ class CMainParams : public CChainParams {
 public:
     CMainParams() {
         strNetworkID = "main";
-        consensus.BIP34Height = 0;
+        consensus.BIP34Height = 100;
         consensus.BIP34Hash = uint256S("0x7de72f07c1749bf9502882a46cf2840733f42ec313d55dc7fe10819c807de903");
         consensus.BIP65Height = 100;
         consensus.BIP66Height = 100;
