@@ -16,14 +16,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Viacoin"
-            VALUE "FileDescription",    "viacoind (Viacoin node with a JSON-RPC server)"
+            VALUE "CompanyName",        "OpenBlock"
+            VALUE "FileDescription",    "openblockd (OpenBlock node with a JSON-RPC server)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "viacoind"
+            VALUE "InternalName",       "openblockd"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "viacoind.exe"
-            VALUE "ProductName",        "viacoind"
+            VALUE "OriginalFilename",   "openblockd.exe"
+            VALUE "ProductName",        "openblockd"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

@@ -195,9 +195,9 @@ public:
     CTransactionRef tx;
     uint256 hashBlock;
 
-    // Viacoin: SegWit removed the coinbase merkle tree and only included it for
-    // Viacoin: backwards compatibility with older bitcoin clients.
-    // Viacoin: Viacoin still needs it here
+    // OpenBlock: SegWit removed the coinbase merkle tree and only included it for
+    // OpenBlock: backwards compatibility with older bitcoin clients.
+    // OpenBlock: OpenBlock still needs it here
     std::vector<uint256> vMerkleBranch;
 
     /* An nIndex == -1 means that hashBlock (in nonzero) refers to the earliest

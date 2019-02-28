@@ -7,11 +7,11 @@
 namespace AuxPow {
 
 // old 0.10 code used the the testnet height for regtest too
-const int START_MAINNET = 498725;
-const int START_TESTNET = 452608;
-const int START_REGTEST = 452608;
+const int START_MAINNET = 100;
+const int START_TESTNET = 100;
+const int START_REGTEST = 100;
 
-const int CHAIN_ID = 0x56;
+const int CHAIN_ID = 0x7E3;
 
 enum
 {

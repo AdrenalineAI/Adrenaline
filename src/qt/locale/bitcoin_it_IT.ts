@@ -88,7 +88,7 @@
     </message>
 </context>
 <context>
-    <name>ViacoinGUI</name>
+    <name>OpenBlockGUI</name>
     <message>
         <source>&amp;Transactions</source>
         <translation>Transazioni</translation>
@@ -202,6 +202,6 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>viacoin-core</name>
+    <name>openblock-core</name>
     </context>
 </TS>

@@ -19,13 +19,13 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Viacoin"
-            VALUE "FileDescription",    PACKAGE_NAME " (GUI node for Viacoin)"
+            VALUE "CompanyName",        "OpenBlock"
+            VALUE "FileDescription",    PACKAGE_NAME " (GUI node for OpenBlock)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "viacoin-qt"
+            VALUE "InternalName",       "openblock-qt"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "viacoin-qt.exe"
+            VALUE "OriginalFilename",   "openblock-qt.exe"
             VALUE "ProductName",        PACKAGE_NAME
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END

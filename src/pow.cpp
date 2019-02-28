@@ -27,7 +27,7 @@ unsigned int CalculateNextWorkRequired_V1(const CBlockIndex* pindexLast, int64_t
     arith_uint256 bnOld;
     bnNew.SetCompact(pindexLast->nBits);
     bnOld = bnNew;
-    // Viacoin: intermediate uint256 can overflow by 1 bit
+    // OpenBlock: intermediate uint256 can overflow by 1 bit
     const arith_uint256 bnPowLimit = UintToArith256(params.powLimit);
     bool fShift = bnNew.bits() > bnPowLimit.bits() - 1;
     if (fShift)
@@ -71,7 +71,7 @@ unsigned int GetNextWorkRequired_V1(const CBlockIndex* pindexLast, const CBlockH
     }
 
     // Go back by what we want to be 14 days worth of blocks
-    // Viacoin: This fixes an issue where a 51% attack can change difficulty at will.
+    // OpenBlock: This fixes an issue where a 51% attack can change difficulty at will.
     // Go back the full period unless it's the first retarget after genesis. Code courtesy of Art Forz
     int blockstogoback = params.DifficultyAdjustmentInterval()-1;
     if ((pindexLast->nHeight+1) != params.DifficultyAdjustmentInterval())
@@ -171,13 +171,7 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
     if (params.fPowNoRetargeting)
         return pindexLast->nBits;
 
-    if (pindexLast->nHeight+1 >= 451000 || (params.fPowAllowMinDifficultyBlocks && pindexLast->nHeight+1 >= 300000)) {
-        return AntiGravityWave(2, pindexLast, pblock, params);
-    } else if (pindexLast->nHeight+1 >= 3600) {
-        return AntiGravityWave(1, pindexLast, pblock, params);
-    } else {
-        return GetNextWorkRequired_V1(pindexLast, pblock, params);
-    }
+    return AntiGravityWave(2, pindexLast, pblock, params);
 }
 
 bool CheckProofOfWork(uint256 hash, unsigned int nBits, const Consensus::Params& params)

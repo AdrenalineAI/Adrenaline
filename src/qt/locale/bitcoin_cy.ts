@@ -84,7 +84,7 @@
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>ViacoinGUI</name>
+    <name>OpenBlockGUI</name>
     <message>
         <source>Synchronizing with network...</source>
         <translation>Cysoni â'r rhwydwaith...</translation>
@@ -154,8 +154,8 @@
         <translation>Newid y cyfrinymadrodd a ddefnyddiwyd ar gyfer amgryptio'r waled</translation>
     </message>
     <message>
-        <source>Viacoin</source>
-        <translation>Viacoin</translation>
+        <source>OpenBlock</source>
+        <translation>OpenBlock</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -634,14 +634,14 @@
     </message>
     </context>
 <context>
-    <name>viacoin-core</name>
+    <name>openblock-core</name>
     <message>
         <source>Options:</source>
         <translation>Opsiynau:</translation>
     </message>
     <message>
-        <source>Viacoin Core</source>
-        <translation>Craidd Viacoin</translation>
+        <source>OpenBlock Core</source>
+        <translation>Craidd OpenBlock</translation>
     </message>
     <message>
         <source>Information</source>

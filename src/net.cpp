@@ -1479,7 +1479,7 @@ void ThreadMapPort()
             }
         }
 
-        std::string strDesc = "Viacoin " + FormatFullVersion();
+        std::string strDesc = "OpenBlock " + FormatFullVersion();
 
         try {
             while (true) {

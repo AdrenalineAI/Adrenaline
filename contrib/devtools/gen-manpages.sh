@@ -4,15 +4,15 @@ TOPDIR=${TOPDIR:-$(git rev-parse --show-toplevel)}
 SRCDIR=${SRCDIR:-$TOPDIR/src}
 MANDIR=${MANDIR:-$TOPDIR/doc/man}
 
-BITCOIND=${BITCOIND:-$SRCDIR/viacoind}
-BITCOINCLI=${BITCOINCLI:-$SRCDIR/viacoin-cli}
-BITCOINTX=${BITCOINTX:-$SRCDIR/viacoin-tx}
-BITCOINQT=${BITCOINQT:-$SRCDIR/qt/viacoin-qt}
+BITCOIND=${BITCOIND:-$SRCDIR/openblockd}
+BITCOINCLI=${BITCOINCLI:-$SRCDIR/openblock-cli}
+BITCOINTX=${BITCOINTX:-$SRCDIR/openblock-tx}
+BITCOINQT=${BITCOINQT:-$SRCDIR/qt/openblock-qt}
 
-[ ! -x $BITCOIND ] && echo "$VIACOIND not found or not executable." && exit 1
+[ ! -x $BITCOIND ] && echo "$OPENBLOCKD not found or not executable." && exit 1
 
 # The autodetected version git tag can screw up manpage output a little bit
-BTCVER=($($VIACOINCLI --version | head -n1 | awk -F'[ -]' '{ print $6, $7 }'))
+BTCVER=($($OPENBLOCKCLI --version | head -n1 | awk -F'[ -]' '{ print $6, $7 }'))
 
 # Create a footer file with copyright content.
 # This gets autodetected fine for bitcoind if --version-string is not set,

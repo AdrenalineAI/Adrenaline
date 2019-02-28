@@ -1,13 +1,13 @@
 *.tar.gz
 
 *.exe
-src/viacoin
-src/viacoind
-src/viacoin-cli
-src/viacoin-tx
-src/test/test_viacoin
-src/test/test_viacoin_fuzzy
-src/qt/test/test_viacoin-qt
+src/openblock
+src/openblockd
+src/openblock-cli
+src/openblock-tx
+src/test/test_openblock
+src/test/test_openblock_fuzzy
+src/qt/test/test_openblock-qt
 
 # autoreconf
 Makefile.in
@@ -74,12 +74,12 @@ src/qt/test/moc*.cpp
 # Compilation and Qt preprocessor part
 *.qm
 Makefile
-viacoin-qt
-Viacoin-Qt.app
+openblock-qt
+Openblock-Qt.app
 
 # Unit-tests
 Makefile.test
-viacoin-qt_test
+openblock-qt_test
 
 # Resources cpp
 qrc_*.cpp
@@ -92,7 +92,7 @@ build
 *.gcno
 *.gcda
 /*.info
-test_viacoin.coverage/
+test_openblock.coverage/
 total.coverage/
 coverage_percent.txt
 

@@ -13,7 +13,7 @@
 - (NSString *)__bundleIdentifier
 {
     if (self == [NSBundle mainBundle]) {
-        return @"org.viacoin.Viacoin-Qt";
+        return @"org.openblock.OpenBlock-Qt";
     } else {
         return [self __bundleIdentifier];
     }

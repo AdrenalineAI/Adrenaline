@@ -1,5 +1,5 @@
-#ifndef VIACOIN_BLOCKHEADER_H
-#define VIACOIN_BLOCKHEADER_H
+#ifndef OPENBLOCK_BLOCKHEADER_H
+#define OPENBLOCK_BLOCKHEADER_H
 
 #include "auxpow/consensus.h"
 #include "auxpow/serialize.h"
@@ -82,4 +82,4 @@ public:
 };
 
 
-#endif //VIACOIN_BLOCKHEADER_H
+#endif //OPENBLOCK_BLOCKHEADER_H

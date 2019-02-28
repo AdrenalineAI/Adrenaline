@@ -1,44 +1,44 @@
-Viacoin Core integration/staging tree
+OpenBlock Core integration/staging tree
 =====================================
 
-[![Build Status](https://travis-ci.org/viacoin/viacoin.svg?branch=master)](https://travis-ci.org/viacoin/viacoin)
+[![Build Status](https://travis-ci.org/openblock/openblock.svg?branch=master)](https://travis-ci.org/openblock/openblock)
 
 https://viacoin.org
 
 To speed up sync process: https://bootstrap.viacoin.org/
 
-What is Viacoin?
+What is OpenBlock?
 ----------------
 
-Viacoin is an experimental digital currency that enables instant payments to
-anyone, anywhere in the world. Viacoin uses peer-to-peer technology to operate
+OpenBlock is an experimental digital currency that enables instant payments to
+anyone, anywhere in the world. OpenBlock uses peer-to-peer technology to operate
 with no central authority: managing transactions and issuing money are carried
-out collectively by the network. Viacoin Core is the name of open source
+out collectively by the network. OpenBlock Core is the name of open source
 software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
-the Viacoin Core software, see https://viacoin.org/en/download
+the OpenBlock Core software, see https://viacoin.org/en/download
 
 License
 -------
 
-Viacoin Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
+OpenBlock Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
 information or see https://opensource.org/licenses/MIT.
 
 Development Process
 -------------------
 
 The `master` branch is regularly built and tested, but is not guaranteed to be
-completely stable. [Tags](https://github.com/viacoin/viacoin/tags) are created
-regularly to indicate new official, stable release versions of Viacoin Core.
+completely stable. [Tags](https://github.com/openblock/openblock/tags) are created
+regularly to indicate new official, stable release versions of OpenBlock Core.
 
 The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md).
 
-The developer [mailing list](https://lists.linuxfoundation.org/mailman/listinfo/viacoin-dev)
+The developer [mailing list](https://lists.linuxfoundation.org/mailman/listinfo/openblock-dev)
 should be used to discuss complicated or controversial changes before working
 on a patch set.
 
-Developer IRC can be found on Freenode at #viacoin-core-dev.
+Developer IRC can be found on Freenode at #openblock-core-dev.
 
 Testing
 -------
@@ -72,7 +72,7 @@ Translations
 ------------
 
 Changes to translations as well as new translations can be submitted to
-[Viacoin Core's Transifex page](https://www.transifex.com/projects/p/viacoin/).
+[OpenBlock Core's Transifex page](https://www.transifex.com/projects/p/openblock/).
 
 Translations are periodically pulled from Transifex and merged into the git repository. See the
 [translation process](doc/translation_process.md) for details on how this works.
@@ -80,4 +80,4 @@ Translations are periodically pulled from Transifex and merged into the git repo
 **Important**: We do not accept translation changes as GitHub pull requests because the next
 pull from Transifex would automatically overwrite them again.
 
-Translators should also subscribe to the [mailing list](https://groups.google.com/forum/#!forum/viacoin-translators).
+Translators should also subscribe to the [mailing list](https://groups.google.com/forum/#!forum/openblock-translators).

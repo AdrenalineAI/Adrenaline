@@ -1,6 +1,6 @@
-Viacoin Core version *0.15.2* is now available from:
+OpenBlock Core version *0.15.2* is now available from:
 
-  <https://github.com/viacoin/viacoin/releases/tag/v0.15.2>
+  <https://github.com/openblock/openblock/releases/tag/v0.15.2>
 
 
 This is a new minor version release, including various bugfixes and
@@ -8,7 +8,7 @@ performance improvements, as well as updated translations.
 
 Please report bugs using the issue tracker at GitHub:
 
-  <https://github.com/viacoin/viacoin/issues>
+  <https://github.com/openblock/openblock/issues>
 
 
 How to Upgrade
@@ -16,8 +16,8 @@ How to Upgrade
 
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes for older versions), then run the 
-installer (on Windows) or just copy over `/Applications/Viacoin-Qt` (on Mac)
-or `viacoind`/`viacoin-qt` (on Linux).
+installer (on Windows) or just copy over `/Applications/OpenBlock-Qt` (on Mac)
+or `openblockd`/`openblock-qt` (on Linux).
 
 The first time you run version 0.15.0 or higher, your chainstate database will
 be converted to a new format, which will take anywhere from a few minutes to
@@ -46,10 +46,10 @@ processing the entire blockchain.
 Compatibility
 ==============
 
-Viacoin Core is extensively tested on multiple operating systems using
+OpenBlock Core is extensively tested on multiple operating systems using
 the Linux kernel, macOS 10.8+, and Windows Vista and later. Windows XP is not supported.
 
-Viacoin Core should also work on most other Unix-like systems but is not
+OpenBlock Core should also work on most other Unix-like systems but is not
 frequently tested on them.
 
 

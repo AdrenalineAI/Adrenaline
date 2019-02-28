@@ -62,12 +62,12 @@
         <translation>Адрес за получаване</translation>
     </message>
     <message>
-        <source>These are your Viacoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Тези са вашите Viacoin адреси за изпращане на монети. Винаги проверявайте количеството и получаващия адрес преди изпращане. </translation>
+        <source>These are your OpenBlock addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Тези са вашите OpenBlock адреси за изпращане на монети. Винаги проверявайте количеството и получаващия адрес преди изпращане. </translation>
     </message>
     <message>
-        <source>These are your Viacoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Това са вашите Viacoin адреси за получаване на монети. Препоръчително е да ползвате нов адрес на всяка транзакция.</translation>
+        <source>These are your OpenBlock addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Това са вашите OpenBlock адреси за получаване на монети. Препоръчително е да ползвате нов адрес на всяка транзакция.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,7 +172,7 @@
     </message>
 </context>
 <context>
-    <name>ViacoinGUI</name>
+    <name>OpenBlockGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Подпиши съобщение...</translation>
@@ -418,10 +418,10 @@
     </message>
     </context>
 <context>
-    <name>viacoin-core</name>
+    <name>openblock-core</name>
     <message>
-        <source>Viacoin Core</source>
-        <translation>Viacoin ядро</translation>
+        <source>OpenBlock Core</source>
+        <translation>OpenBlock ядро</translation>
     </message>
     </context>
 </TS>

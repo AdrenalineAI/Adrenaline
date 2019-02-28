@@ -47,10 +47,10 @@ struct Params {
     /** Block height at which BIP66 becomes active */
     int BIP66Height;
 
-    /** Viacoin enforcing block version 5 */
+    /** OpenBlock enforcing block version 5 */
     int BlockVer5Height;
 
-    /** AuxPow starting height for Viacoin */
+    /** AuxPow starting height for OpenBlock */
     int nAuxPowStartHeight;
     int nWitnessStartHeight;
 

@@ -132,7 +132,7 @@
         <translation>Potvrdite šifrovanje novčanika</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VIACOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR OPENBLOCKS&lt;/b&gt;!</source>
         <translation>Upozorenje: Ako šifrujete svoj novčanik, i potom izgubite svoju pristupnu frazu &lt;b&gt;IZGUBIĆETE SVE SVOJE BITKOINE&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -156,7 +156,7 @@
     </message>
 </context>
 <context>
-    <name>ViacoinGUI</name>
+    <name>OpenBlockGUI</name>
     <message>
         <source>Synchronizing with network...</source>
         <translation>Usklađivanje sa mrežom...</translation>
@@ -198,16 +198,16 @@
         <translation>Otvori &amp;URI...</translation>
     </message>
     <message>
-        <source>Send coins to a Viacoin address</source>
-        <translation>Pošalji novčiće na Viacoin adresu</translation>
+        <source>Send coins to a OpenBlock address</source>
+        <translation>Pošalji novčiće na OpenBlock adresu</translation>
     </message>
     <message>
         <source>&amp;Verify message...</source>
         <translation>&amp;Proveri poruku...</translation>
     </message>
     <message>
-        <source>Viacoin</source>
-        <translation>Viacoin</translation>
+        <source>OpenBlock</source>
+        <translation>OpenBlock</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -444,10 +444,10 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>viacoin-core</name>
+    <name>openblock-core</name>
     <message>
-        <source>Viacoin Core</source>
-        <translation>Viacoin Core</translation>
+        <source>OpenBlock Core</source>
+        <translation>OpenBlock Core</translation>
     </message>
     <message>
         <source>Information</source>

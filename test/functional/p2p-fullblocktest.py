@@ -577,7 +577,7 @@ class FullBlockTest(ComparisonTestFramework):
         new_txs.append(tx)
         update_block(40, new_txs)
         # yield rejected(RejectResult(16, b'bad-blk-sigops'))
-        # Viacoin: this won't fit in a block
+        # OpenBlock: this won't fit in a block
         yield rejected(RejectResult(16, b'bad-blk-length'))
 
         # same as b40, but one less sigop
@@ -589,7 +589,7 @@ class FullBlockTest(ComparisonTestFramework):
         tx.vin.append(CTxIn(lastOutpoint, b''))
         tx.vout.append(CTxOut(1, CScript([OP_CHECKSIG] * b41_sigops_to_fill)))
         tx.rehash()
-        # Viacoin: this won't fit in a block
+        # OpenBlock: this won't fit in a block
         # update_block(41, [tx])
         yield accepted()
         # Fork off of b39 to create a constant base again

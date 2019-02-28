@@ -52,7 +52,7 @@
     </message>
     </context>
 <context>
-    <name>ViacoinGUI</name>
+    <name>OpenBlockGUI</name>
     <message>
         <source>&amp;Overview</source>
         <translation>&amp;கண்ணோட்டம்</translation>
@@ -90,8 +90,8 @@
         <translation>&amp;செய்தியை சரிசெய்...</translation>
     </message>
     <message>
-        <source>Viacoin</source>
-        <translation>Viacoin</translation>
+        <source>OpenBlock</source>
+        <translation>OpenBlock</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -706,10 +706,10 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>viacoin-core</name>
+    <name>openblock-core</name>
     <message>
-        <source>Viacoin Core</source>
-        <translation>Viacoin மையம்</translation>
+        <source>OpenBlock Core</source>
+        <translation>OpenBlock மையம்</translation>
     </message>
     <message>
         <source>(default: %u)</source>

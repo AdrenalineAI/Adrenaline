@@ -16,14 +16,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Viacoin"
-            VALUE "FileDescription",    "viacoin-cli (JSON-RPC client for " PACKAGE_NAME ")"
+            VALUE "CompanyName",        "OpenBlock"
+            VALUE "FileDescription",    "openblock-cli (JSON-RPC client for " PACKAGE_NAME ")"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "viacoin-cli"
+            VALUE "InternalName",       "openblock-cli"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "viacoin-cli.exe"
-            VALUE "ProductName",        "viacoin-cli"
+            VALUE "OriginalFilename",   "openblock-cli.exe"
+            VALUE "ProductName",        "openblock-cli"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

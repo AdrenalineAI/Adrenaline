@@ -68,7 +68,7 @@
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>ViacoinGUI</name>
+    <name>OpenBlockGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Firmar &amp;mensaje...</translation>
@@ -114,8 +114,8 @@
         <translation>Reindexando bloques en el disco...</translation>
     </message>
     <message>
-        <source>Send coins to a Viacoin address</source>
-        <translation>Enviar monedas a una dirección Viacoin</translation>
+        <source>Send coins to a OpenBlock address</source>
+        <translation>Enviar monedas a una dirección OpenBlock</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -130,8 +130,8 @@
         <translation>Abre la consola de depuración y diágnostico</translation>
     </message>
     <message>
-        <source>Viacoin</source>
-        <translation>Viacoin</translation>
+        <source>OpenBlock</source>
+        <translation>OpenBlock</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -158,12 +158,12 @@
         <translation>Encriptar las llaves privadas que pertenecen a tu billetera</translation>
     </message>
     <message>
-        <source>Sign messages with your Viacoin addresses to prove you own them</source>
-        <translation>Firma mensajes con tus direcciones Viacoin para probar que eres dueño de ellas</translation>
+        <source>Sign messages with your OpenBlock addresses to prove you own them</source>
+        <translation>Firma mensajes con tus direcciones OpenBlock para probar que eres dueño de ellas</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Viacoin addresses</source>
-        <translation>Verificar mensajes para asegurar que estaban firmados con direcciones Viacoin especificas</translation>
+        <source>Verify messages to ensure they were signed with specified OpenBlock addresses</source>
+        <translation>Verificar mensajes para asegurar que estaban firmados con direcciones OpenBlock especificas</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -582,7 +582,7 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>viacoin-core</name>
+    <name>openblock-core</name>
     <message>
         <source>Options:</source>
         <translation>Opciones:</translation>
@@ -608,8 +608,8 @@
         <translation>Correr en segundo plano como daemon y aceptar comandos</translation>
     </message>
     <message>
-        <source>Viacoin Core</source>
-        <translation>Viacoin Core</translation>
+        <source>OpenBlock Core</source>
+        <translation>OpenBlock Core</translation>
     </message>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>

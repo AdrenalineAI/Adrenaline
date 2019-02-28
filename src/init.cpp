@@ -531,7 +531,7 @@ std::string HelpMessage(HelpMessageMode mode)
 
 std::string LicenseInfo()
 {
-    const std::string URL_SOURCE_CODE = "<https://github.com/viacoin/viacoin>";
+    const std::string URL_SOURCE_CODE = "<https://github.com/openblock/openblock>";
     const std::string URL_WEBSITE = "<https://viacoin.org>";
 
     return CopyrightHolders(strprintf(_("Copyright (C) %i-%i"), 2014, COPYRIGHT_YEAR) + " ") + "\n" +
@@ -830,7 +830,7 @@ void InitLogging()
     fLogIPs = gArgs.GetBoolArg("-logips", DEFAULT_LOGIPS);
 
     LogPrintf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-    LogPrintf("Viacoin version %s\n", FormatFullVersion());
+    LogPrintf("OpenBlock version %s\n", FormatFullVersion());
 }
 
 namespace { // Variables internal to initialization process only

@@ -1,40 +1,40 @@
-Viacoin Core
+OpenBlock Core
 =============
 
 Setup
 ---------------------
-Viacoin Core is the original Viacoin client and it builds the backbone of the network. It downloads and, by default, stores the entire history of Viacoin transactions (which is currently more than 7 GBs); depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
+OpenBlock Core is the original OpenBlock client and it builds the backbone of the network. It downloads and, by default, stores the entire history of OpenBlock transactions (which is currently more than 7 GBs); depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
 
-To download Viacoin Core, visit [viacoin.org](https://viacoin.org).
+To download OpenBlock Core, visit [viacoin.org](https://openblock.org).
 
 Running
 ---------------------
-The following are some helpful notes on how to run Viacoin on your native platform.
+The following are some helpful notes on how to run OpenBlock on your native platform.
 
 ### Unix
 
 Unpack the files into a directory and run:
 
-- `bin/viacoin-qt` (GUI) or
-- `bin/viacoind` (headless)
+- `bin/openblock-qt` (GUI) or
+- `bin/openblockd` (headless)
 
 ### Windows
 
-Unpack the files into a directory, and then run viacoin-qt.exe.
+Unpack the files into a directory, and then run openblock-qt.exe.
 
 ### OS X
 
-Drag Viacoin-Core to your applications folder, and then run Viacoin-Core.
+Drag OpenBlock-Core to your applications folder, and then run OpenBlock-Core.
 
 ### Need Help?
 
-* See the documentation at the [Viacoin Wiki](https://viacoin.info/)
+* See the documentation at the [OpenBlock Wiki](https://openblock.info/)
 for help and more information.
-* Ask for help on [#viacoin](http://webchat.freenode.net?channels=viacoin) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=viacoin).
+* Ask for help on [#openblock](http://webchat.freenode.net?channels=openblock) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=openblock).
 
 Building
 ---------------------
-The following are developer notes on how to build Viacoin on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+The following are developer notes on how to build OpenBlock on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
 - [OS X Build Notes](build-osx.md)
 - [Unix Build Notes](build-unix.md)
@@ -44,12 +44,12 @@ The following are developer notes on how to build Viacoin on your native platfor
 
 Development
 ---------------------
-The Viacoin repo's [root README](/README.md) contains relevant information on the development process and automated testing.
+The OpenBlock repo's [root README](/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Release Notes](release-notes.md)
 - [Release Process](release-process.md)
-- [Source Code Documentation (External Link)](https://dev.visucore.com/viacoin/doxygen/)
+- [Source Code Documentation (External Link)](https://dev.visucore.com/openblock/doxygen/)
 - [Translation Process](translation_process.md)
 - [Translation Strings Policy](translation_strings_policy.md)
 - [Travis CI](travis-ci.md)
@@ -60,7 +60,7 @@ The Viacoin repo's [root README](/README.md) contains relevant information on th
 - [Benchmarking](benchmarking.md)
 
 ### Resources
-* Discuss general Viacoin development on #viacoin-dev on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=viacoin-dev).
+* Discuss general OpenBlock development on #openblock-dev on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=openblock-dev).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

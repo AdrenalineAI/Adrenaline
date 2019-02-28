@@ -51,9 +51,9 @@ QString BitcoinUnits::description(int unit)
 {
     switch(unit)
     {
-    case BTC: return QString("Viacoins");
-    case mBTC: return QString("Milli-Viacoins (1 / 1" THIN_SP_UTF8 "000)");
-    case uBTC: return QString("Micro-Viacoins (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+    case BTC: return QString("OpenBlocks");
+    case mBTC: return QString("Milli-OpenBlocks (1 / 1" THIN_SP_UTF8 "000)");
+    case uBTC: return QString("Micro-OpenBlocks (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
     default: return QString("???");
     }
 }

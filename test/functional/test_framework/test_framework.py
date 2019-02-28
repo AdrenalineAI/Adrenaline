@@ -73,11 +73,11 @@ class BitcoinTestFramework(object):
 
         parser = optparse.OptionParser(usage="%prog [options]")
         parser.add_option("--nocleanup", dest="nocleanup", default=False, action="store_true",
-                          help="Leave viacoinds and test.* datadir on exit or error")
+                          help="Leave openblockds and test.* datadir on exit or error")
         parser.add_option("--noshutdown", dest="noshutdown", default=False, action="store_true",
-                          help="Don't stop viacoinds after the test execution")
+                          help="Don't stop openblockds after the test execution")
         parser.add_option("--srcdir", dest="srcdir", default=os.path.normpath(os.path.dirname(os.path.realpath(__file__)) + "/../../../src"),
-                          help="Source directory containing viacoind/viacoin-cli (default: %default)")
+                          help="Source directory containing openblockd/openblock-cli (default: %default)")
         parser.add_option("--cachedir", dest="cachedir", default=os.path.normpath(os.path.dirname(os.path.realpath(__file__)) + "/../../cache"),
                           help="Directory for caching pregenerated datadirs")
         parser.add_option("--tmpdir", dest="tmpdir", help="Root directory for datadirs")
@@ -142,7 +142,7 @@ class BitcoinTestFramework(object):
             if self.nodes:
                 self.stop_nodes()
         else:
-            self.log.info("Note: viacoinds were not stopped and may still be running")
+            self.log.info("Note: openblockds were not stopped and may still be running")
 
         if not self.options.nocleanup and not self.options.noshutdown and success != TestStatus.FAILED:
             self.log.info("Cleaning up")
@@ -282,7 +282,7 @@ class BitcoinTestFramework(object):
                 self.start_node(i, extra_args, stderr=log_stderr)
                 self.stop_node(i)
             except Exception as e:
-                assert 'viacoind exited' in str(e)  # node must have shutdown
+                assert 'openblockd exited' in str(e)  # node must have shutdown
                 self.nodes[i].running = False
                 self.nodes[i].process = None
                 if expected_msg is not None:
@@ -292,9 +292,9 @@ class BitcoinTestFramework(object):
                         raise AssertionError("Expected error \"" + expected_msg + "\" not found in:\n" + stderr)
             else:
                 if expected_msg is None:
-                    assert_msg = "viacoind should have exited with an error"
+                    assert_msg = "openblockd should have exited with an error"
                 else:
-                    assert_msg = "viacoind should have exited with expected error " + expected_msg
+                    assert_msg = "openblockd should have exited with expected error " + expected_msg
                 raise AssertionError(assert_msg)
 
     def wait_for_node_exit(self, i, timeout):
@@ -392,7 +392,7 @@ class BitcoinTestFramework(object):
             # Create cache directories, run bitcoinds:
             for i in range(MAX_NODES):
                 datadir = initialize_datadir(self.options.cachedir, i)
-                args = [os.getenv("VIACOIND", "viacoind"), "-server", "-keypool=1", "-datadir=" + datadir, "-discover=0"]
+                args = [os.getenv("OPENBLOCKD", "openblockd"), "-server", "-keypool=1", "-datadir=" + datadir, "-discover=0"]
                 if i > 0:
                     args.append("-connect=127.0.0.1:" + str(p2p_port(0)))
                 self.nodes.append(TestNode(i, self.options.cachedir, extra_args=[], rpchost=None, timewait=None, binary=None, stderr=None, mocktime=self.mocktime, coverage_dir=None))
@@ -459,11 +459,11 @@ class ComparisonTestFramework(BitcoinTestFramework):
 
     def add_options(self, parser):
         parser.add_option("--testbinary", dest="testbinary",
-                          default=os.getenv("VIACOIND", "viacoind"),
-                          help="viacoind binary to test")
+                          default=os.getenv("OPENBLOCKD", "openblockd"),
+                          help="openblockd binary to test")
         parser.add_option("--refbinary", dest="refbinary",
-                          default=os.getenv("VIACOIND", "viacoind"),
-                          help="viacoind binary to use for reference nodes (if any)")
+                          default=os.getenv("OPENBLOCKD", "openblockd"),
+                          help="openblockd binary to use for reference nodes (if any)")
 
     def setup_network(self):
         extra_args = [['-whitelist=127.0.0.1']] * self.num_nodes
