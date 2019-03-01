@@ -70,8 +70,8 @@ script:
     - if [ -n "$OSX_SDK" ]; then mkdir out/$TRAVIS_PULL_REQUEST; fi
     - if [ -n "$OSX_SDK" ]; then mkdir out/$TRAVIS_PULL_REQUEST/$TRAVIS_JOB_NUMBER-$HOST; fi
     - if [ -n "$OSX_SDK" ]; then mkdir ${OUTDIR}/bin; fi
-    - if [ -n "$OSX_SDK" ]; then cp -rf build/OpenBlock-Qt.app ${OUTDIR}/bin; fi
-    - if [ -n "$OSX_SDK" ]; then cp -rf build/OpenBlock-Core.dmg ${OUTDIR}/bin; fi
+    - if [ -n "$OSX_SDK" ]; then cp -rf openblock-$HOST/build/OpenBlock-Qt.app ${OUTDIR}/bin; fi
+    - if [ -n "$OSX_SDK" ]; then cp -rf openblock-$HOST/build/OpenBlock-Core.dmg ${OUTDIR}/bin; fi
     - export LD_LIBRARY_PATH=$TRAVIS_BUILD_DIR/depends/$HOST/lib
     - ls -la
     - ls -la ${OUTDIR}/bin
