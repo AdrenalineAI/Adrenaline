@@ -70,14 +70,11 @@ script:
     - if [ -n "$OSX_SDK" ]; then mkdir out/$TRAVIS_PULL_REQUEST; fi
     - if [ -n "$OSX_SDK" ]; then mkdir out/$TRAVIS_PULL_REQUEST/$TRAVIS_JOB_NUMBER-$HOST; fi
     - if [ -n "$OSX_SDK" ]; then mkdir ${OUTDIR}/bin; fi
-    - if [ -n "$OSX_SDK" ]; then cp -rf build/Openblock-Qt.app ${OUTDIR}/bin; fi
-    - if [ -n "$OSX_SDK" ]; then cp -rf build/Openblock-Core.dmg ${OUTDIR}/bin; fi
+    - if [ -n "$OSX_SDK" ]; then cp -rf build/OpenBlock-Qt.app ${OUTDIR}/bin; fi
+    - if [ -n "$OSX_SDK" ]; then cp -rf build/OpenBlock-Core.dmg ${OUTDIR}/bin; fi
     - export LD_LIBRARY_PATH=$TRAVIS_BUILD_DIR/depends/$HOST/lib
     - ls -la
     - ls -la ${OUTDIR}/bin
-    - if [ "$RUN_TESTS" = "true" ]; then travis_wait 30 make $MAKEJOBS check VERBOSE=1; fi
-    - if [ "$TRAVIS_EVENT_TYPE" = "cron" ]; then extended="--extended --exclude pruning,dbcrash"; fi
-    - if [ "$RUN_TESTS" = "true" ]; then test/functional/test_runner.py --coverage --quiet ${extended}; fi
 after_script:
     - echo $TRAVIS_COMMIT_RANGE
     - echo $TRAVIS_COMMIT_LOG
@@ -90,4 +87,4 @@ deploy:
   file:
     - ${OUTDIR}/../openblock-$HOST.tar.gz
   on:
-    repo: openblock-org/openblock
+    repo: OpenBlock-Org/OpenBlock
