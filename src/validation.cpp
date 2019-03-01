@@ -2884,9 +2884,7 @@ bool CheckBlock(const CBlock& block, CValidationState& state, const Consensus::P
 bool IsWitnessEnabled(const CBlockIndex* pindexPrev, const Consensus::Params& params)
 {
     LOCK(cs_main);
-    const int nHeight = pindexPrev == nullptr ? 0 : pindexPrev->nHeight + 1;
-    return (nHeight >= params.nWitnessStartHeight ||
-            VersionBitsState(pindexPrev, params, Consensus::DEPLOYMENT_SEGWIT, versionbitscache) == THRESHOLD_ACTIVE);
+    return (VersionBitsState(pindexPrev, params, Consensus::DEPLOYMENT_SEGWIT, versionbitscache) == THRESHOLD_ACTIVE);
 }
 
 // Compute at which vout of the block's coinbase transaction the witness

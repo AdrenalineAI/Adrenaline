@@ -76,7 +76,7 @@ public:
     CMainParams() {
         strNetworkID = "main";
         consensus.BIP34Height = 100;
-        consensus.BIP34Hash = uint256S("0x7de72f07c1749bf9502882a46cf2840733f42ec313d55dc7fe10819c807de903");
+        consensus.BIP34Hash = uint256S("0x0");
         consensus.BIP65Height = 100;
         consensus.BIP66Height = 100;
         consensus.BlockVer5Height = 100;
