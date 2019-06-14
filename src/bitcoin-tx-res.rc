@@ -16,14 +16,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "OpenBlock"
-            VALUE "FileDescription",    "openblock-tx (CLI OpenBlock transaction editor utility)"
+            VALUE "CompanyName",        "ADRENALINE"
+            VALUE "FileDescription",    "adrenaline-tx (CLI ADRENALINE transaction editor utility)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "openblock-tx"
+            VALUE "InternalName",       "adrenaline-tx"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "openblock-tx.exe"
-            VALUE "ProductName",        "openblock-tx"
+            VALUE "OriginalFilename",   "adrenaline-tx.exe"
+            VALUE "ProductName",        "adrenaline-tx"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

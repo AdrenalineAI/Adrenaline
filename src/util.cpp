@@ -87,8 +87,8 @@
 // Application startup time (used for uptime calculation)
 const int64_t nStartupTime = GetTime();
 
-const char * const BITCOIN_CONF_FILENAME = "openblock.conf";
-const char * const BITCOIN_PID_FILENAME = "openblock.pid";
+const char * const BITCOIN_CONF_FILENAME = "adrenaline.conf";
+const char * const BITCOIN_PID_FILENAME = "adrenaline.pid";
 
 ArgsManager gArgs;
 bool fPrintToConsole = false;
@@ -505,7 +505,7 @@ static std::string FormatException(const std::exception* pex, const char* pszThr
     char pszModule[MAX_PATH] = "";
     GetModuleFileNameA(nullptr, pszModule, sizeof(pszModule));
 #else
-    const char* pszModule = "openblock";
+    const char* pszModule = "adrenaline";
 #endif
     if (pex)
         return strprintf(
@@ -530,7 +530,7 @@ fs::path GetDefaultDataDir()
     // Unix: ~/.bitcoin
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "OpenBlock";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "ADRENALINE";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -540,10 +540,10 @@ fs::path GetDefaultDataDir()
         pathRet = fs::path(pszHome);
 #ifdef MAC_OSX
     // Mac
-    return pathRet / "Library/Application Support/OpenBlock";
+    return pathRet / "Library/Application Support/ADRENALINE";
 #else
     // Unix
-    return pathRet / ".openblock";
+    return pathRet / ".adrenaline";
 #endif
 #endif
 }

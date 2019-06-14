@@ -64,7 +64,7 @@
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>OpenBlockGUI</name>
+    <name>ADRENALINEGUI</name>
     <message>
         <source>Synchronizing with network...</source>
         <translation>Sincronizando con la red...</translation>
@@ -126,8 +126,8 @@
         <translation>Abrir &amp;URL...</translation>
     </message>
     <message>
-        <source>Send coins to a OpenBlock address</source>
-        <translation>Enviando monedas a una dirección de OpenBlock</translation>
+        <source>Send coins to a ADRENALINE address</source>
+        <translation>Enviando monedas a una dirección de ADRENALINE</translation>
     </message>
     <message>
         <source>Change the passphrase used for wallet encryption</source>
@@ -146,8 +146,8 @@
         <translation>&amp;Verificar Mensaje...</translation>
     </message>
     <message>
-        <source>OpenBlock</source>
-        <translation>OpenBlock</translation>
+        <source>ADRENALINE</source>
+        <translation>ADRENALINE</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -294,10 +294,10 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>openblock-core</name>
+    <name>adrenaline-core</name>
     <message>
-        <source>OpenBlock Core</source>
-        <translation>OpenBlock Core</translation>
+        <source>ADRENALINE Core</source>
+        <translation>ADRENALINE Core</translation>
     </message>
     <message>
         <source>Insufficient funds</source>

@@ -80,7 +80,7 @@
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>OpenBlockGUI</name>
+    <name>ADRENALINEGUI</name>
     <message>
         <source>Error</source>
         <translation>نقص</translation>
@@ -238,7 +238,7 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>openblock-core</name>
+    <name>adrenaline-core</name>
     <message>
         <source>Insufficient funds</source>
         <translation>ناکافی فنڈز</translation>

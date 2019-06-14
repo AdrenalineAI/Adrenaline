@@ -62,12 +62,12 @@
         <translation>Prijímajúce adresy</translation>
     </message>
     <message>
-        <source>These are your OpenBlock addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Toto sú Vaše OpenBlock adresy pre posielanie platieb. Vždy skontrolujte sumu a prijímaciu adresu pred poslaním mincí.</translation>
+        <source>These are your ADRENALINE addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Toto sú Vaše ADRENALINE adresy pre posielanie platieb. Vždy skontrolujte sumu a prijímaciu adresu pred poslaním mincí.</translation>
     </message>
     <message>
-        <source>These are your OpenBlock addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Toto sú vaše OpenBlock adresy pre prijímanie platieb. Odporúča sa použiť vždy novú prijímaciu adresu pre každú transakciu.</translation>
+        <source>These are your ADRENALINE addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Toto sú vaše ADRENALINE adresy pre prijímanie platieb. Odporúča sa použiť vždy novú prijímaciu adresu pre každú transakciu.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -168,8 +168,8 @@
         <translation>Potvrďte zašifrovanie peňaženky</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR OPENBLOCKS&lt;/b&gt;!</source>
-        <translation>Varovanie: Ak zašifrujete peňaženku a stratíte heslo, &lt;b&gt;STRATÍTE VŠETKY VAŠE OPENBLOCKY&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ADRENALINES&lt;/b&gt;!</source>
+        <translation>Varovanie: Ak zašifrujete peňaženku a stratíte heslo, &lt;b&gt;STRATÍTE VŠETKY VAŠE ADRENALINEY&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -180,8 +180,8 @@
         <translation>Peňaženka zašifrovaná</translation>
     </message>
     <message>
-        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your openblocks from being stolen by malware infecting your computer.</source>
-        <translation>%1 sa teraz zavrie, aby sa ukončil proces šifrovania. Zašifrovanie peňaženky neochráni úplne pred krádežou openblockov škodlivými programami, ktoré prenikli do vášho počítača.</translation>
+        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your adrenalines from being stolen by malware infecting your computer.</source>
+        <translation>%1 sa teraz zavrie, aby sa ukončil proces šifrovania. Zašifrovanie peňaženky neochráni úplne pred krádežou adrenalineov škodlivými programami, ktoré prenikli do vášho počítača.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -232,7 +232,7 @@
     </message>
 </context>
 <context>
-    <name>OpenBlockGUI</name>
+    <name>ADRENALINEGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Podpísať &amp;správu...</translation>
@@ -338,8 +338,8 @@
         <translation>Preindexúvam bloky na disku...</translation>
     </message>
     <message>
-        <source>Send coins to a OpenBlock address</source>
-        <translation>Poslať openblocks na adresu</translation>
+        <source>Send coins to a ADRENALINE address</source>
+        <translation>Poslať adrenalines na adresu</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -362,8 +362,8 @@
         <translation>O&amp;veriť správu...</translation>
     </message>
     <message>
-        <source>OpenBlock</source>
-        <translation>OpenBlock</translation>
+        <source>ADRENALINE</source>
+        <translation>ADRENALINE</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -390,12 +390,12 @@
         <translation>Zašifruj súkromné kľúče ktoré patria do vašej peňaženky</translation>
     </message>
     <message>
-        <source>Sign messages with your OpenBlock addresses to prove you own them</source>
-        <translation>Podpísať správu s vašou adresou OpenBlock aby ste preukázali že ju vlastníte</translation>
+        <source>Sign messages with your ADRENALINE addresses to prove you own them</source>
+        <translation>Podpísať správu s vašou adresou ADRENALINE aby ste preukázali že ju vlastníte</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified OpenBlock addresses</source>
-        <translation>Overiť či správa bola podpísaná uvedenou OpenBlock adresou</translation>
+        <source>Verify messages to ensure they were signed with specified ADRENALINE addresses</source>
+        <translation>Overiť či správa bola podpísaná uvedenou ADRENALINE adresou</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -414,8 +414,8 @@
         <translation>Lišta záložiek</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and openblock: URIs)</source>
-        <translation>Vyžiadať platby (vygeneruje QR kódy a openblock: URI)</translation>
+        <source>Request payments (generates QR codes and adrenaline: URIs)</source>
+        <translation>Vyžiadať platby (vygeneruje QR kódy a adrenaline: URI)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -426,16 +426,16 @@
         <translation>Zobraziť zoznam použitých prijímacích adries a ich popisov</translation>
     </message>
     <message>
-        <source>Open a openblock: URI or payment request</source>
-        <translation>Otvoriť openblock URI alebo výzvu k platbe</translation>
+        <source>Open a adrenaline: URI or payment request</source>
+        <translation>Otvoriť adrenaline URI alebo výzvu k platbe</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>Možnosti príkazového riadku</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to OpenBlock network</source>
-        <translation><numerusform>%n aktívne pripojenie do siete OpenBlock</numerusform><numerusform>%n aktívne pripojenia do siete OpenBlock</numerusform><numerusform>%n aktívnych pripojení do siete OpenBlock</numerusform></translation>
+        <source>%n active connection(s) to ADRENALINE network</source>
+        <translation><numerusform>%n aktívne pripojenie do siete ADRENALINE</numerusform><numerusform>%n aktívne pripojenia do siete ADRENALINE</numerusform><numerusform>%n aktívnych pripojení do siete ADRENALINE</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -478,8 +478,8 @@
         <translation>Aktualizovaný</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible OpenBlock command-line options</source>
-        <translation>Ukáž %1 zoznam možných nastavení OpenBlocku pomocou príkazového riadku</translation>
+        <source>Show the %1 help message to get a list with possible ADRENALINE command-line options</source>
+        <translation>Ukáž %1 zoznam možných nastavení ADRENALINEu pomocou príkazového riadku</translation>
     </message>
     <message>
         <source>%1 client</source>
@@ -548,8 +548,8 @@
         <translation>Peňaženka je &lt;b&gt;zašifrovaná&lt;/b&gt; a momentálne &lt;b&gt;zamknutá&lt;/b&gt;</translation>
     </message>
     <message>
-        <source>A fatal error occurred. OpenBlock can no longer continue safely and will quit.</source>
-        <translation>Vyskytla sa kritická chyba. OpenBlock nemôže ďalej bezpečne pokračovať a ukončí sa.</translation>
+        <source>A fatal error occurred. ADRENALINE can no longer continue safely and will quit.</source>
+        <translation>Vyskytla sa kritická chyba. ADRENALINE nemôže ďalej bezpečne pokračovať a ukončí sa.</translation>
     </message>
 </context>
 <context>
@@ -742,8 +742,8 @@
         <translation>Upraviť odosielaciu adresu</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid OpenBlock address.</source>
-        <translation>Vložená adresa "%1" nieje platnou adresou OpenBlock.</translation>
+        <source>The entered address "%1" is not a valid ADRENALINE address.</source>
+        <translation>Vložená adresa "%1" nieje platnou adresou ADRENALINE.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -851,8 +851,8 @@
         <translation>Keďže toto je prvé spustenie programu, môžete si vybrať, kam %1 bude ukladať vaše údaje.</translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the OpenBlock block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>%1 stiahne a uloží kópiu OpenBlock block chain. Minimálne %2GB dát bude uložených v tejto zložke, a bude sa zväčšovať postupom času. Peňaženka bude taktiež uložená v tejto zložke.</translation>
+        <source>%1 will download and store a copy of the ADRENALINE block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>%1 stiahne a uloží kópiu ADRENALINE block chain. Minimálne %2GB dát bude uložených v tejto zložke, a bude sa zväčšovať postupom času. Peňaženka bude taktiež uložená v tejto zložke.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -886,12 +886,12 @@
         <translation>Forma</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the openblock network, as detailed below.</source>
-        <translation>Nedávne transakcie nemusia byť ešte viditeľné preto môže byť zostatok vo vašej peňaženke nesprávny. Táto informácia bude správna keď sa dokončí synchronizovanie peňaženky so sieťou openblock, ako je rozpísané nižšie.</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the adrenaline network, as detailed below.</source>
+        <translation>Nedávne transakcie nemusia byť ešte viditeľné preto môže byť zostatok vo vašej peňaženke nesprávny. Táto informácia bude správna keď sa dokončí synchronizovanie peňaženky so sieťou adrenaline, ako je rozpísané nižšie.</translation>
     </message>
     <message>
-        <source>Attempting to spend openblocks that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>Pokus o minutie openblockov, ktoré sú ovplyvnené ešte nezobrazenými transakciami, nebude sieťou akceptovaný.</translation>
+        <source>Attempting to spend adrenalines that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation>Pokus o minutie adrenalineov, ktoré sú ovplyvnené ešte nezobrazenými transakciami, nebude sieťou akceptovaný.</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -1048,16 +1048,16 @@
         <translation>Minúť nepotvrdený výdavok</translation>
     </message>
     <message>
-        <source>Automatically open the OpenBlock client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automaticky otvorit port pre OpenBlock na routeri. Toto funguje len ak router podporuje UPnP a je táto podpora aktivovaná.</translation>
+        <source>Automatically open the ADRENALINE client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automaticky otvorit port pre ADRENALINE na routeri. Toto funguje len ak router podporuje UPnP a je táto podpora aktivovaná.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Mapovať port pomocou &amp;UPnP</translation>
     </message>
     <message>
-        <source>Connect to the OpenBlock network through a SOCKS5 proxy.</source>
-        <translation>Pripojiť do siete OpenBlock cez proxy server SOCKS5.</translation>
+        <source>Connect to the ADRENALINE network through a SOCKS5 proxy.</source>
+        <translation>Pripojiť do siete ADRENALINE cez proxy server SOCKS5.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1096,8 +1096,8 @@
         <translation>Tor</translation>
     </message>
     <message>
-        <source>Connect to the OpenBlock network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>Pripojiť k OpenBlockovej sieti cez separované SOCKS5 proxy pre skrytú službu Tor.</translation>
+        <source>Connect to the ADRENALINE network through a separate SOCKS5 proxy for Tor hidden services.</source>
+        <translation>Pripojiť k ADRENALINEovej sieti cez separované SOCKS5 proxy pre skrytú službu Tor.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services:</source>
@@ -1145,7 +1145,7 @@
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Zvoľte ako deliť openblock pri zobrazovaní pri platbách a užívateľskom rozhraní.</translation>
+        <translation>Zvoľte ako deliť adrenaline pri zobrazovaní pri platbách a užívateľskom rozhraní.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1195,8 +1195,8 @@
         <translation>Forma</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the OpenBlock network after a connection is established, but this process has not completed yet.</source>
-        <translation>Zobrazené informácie môžu byť neaktuálne. Vaša peňaženka sa automaticky synchronizuje so sieťou OpenBlock po nadviazaní spojenia, ale tento proces ešte nie je ukončený.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the ADRENALINE network after a connection is established, but this process has not completed yet.</source>
+        <translation>Zobrazené informácie môžu byť neaktuálne. Vaša peňaženka sa automaticky synchronizuje so sieťou ADRENALINE po nadviazaní spojenia, ale tento proces ešte nie je ukončený.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1282,8 +1282,8 @@
         <translation>Neplatná adresa platby %1</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid OpenBlock address or malformed URI parameters.</source>
-        <translation>URI sa nedá analyzovať! To môže byť spôsobené neplatnou OpenBlock adresou alebo zle nastavenými vlastnosťami URI.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid ADRENALINE address or malformed URI parameters.</source>
+        <translation>URI sa nedá analyzovať! To môže byť spôsobené neplatnou ADRENALINE adresou alebo zle nastavenými vlastnosťami URI.</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -1376,8 +1376,8 @@
         <translation>Suma</translation>
     </message>
     <message>
-        <source>Enter a OpenBlock address (e.g. %1)</source>
-        <translation>Zadajte openblock adresu (napr. %1)</translation>
+        <source>Enter a ADRENALINE address (e.g. %1)</source>
+        <translation>Zadajte adrenaline adresu (napr. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1793,8 +1793,8 @@
         <translation>Znovu použiť jestvujúcu prijímaciu adresu (neodporúča sa)</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the OpenBlock network.</source>
-        <translation>Pridať voliteľnú správu k výzve na zaplatenie, ktorá sa zobrazí keď bude výzva otvorená. Poznámka: Správa nebude poslaná s platbou cez sieť OpenBlock.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the ADRENALINE network.</source>
+        <translation>Pridať voliteľnú správu k výzve na zaplatenie, ktorá sa zobrazí keď bude výzva otvorená. Poznámka: Správa nebude poslaná s platbou cez sieť ADRENALINE.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -1947,7 +1947,7 @@
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation>Poslať OpenBlocks</translation>
+        <translation>Poslať ADRENALINEs</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
@@ -2026,7 +2026,7 @@
         <translation>spolu aspoň</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for openblock transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for adrenaline transactions than the network can process.</source>
         <translation>Zaplatenie len minimálneho poplatku je v poriadku, pokiaľ existuje menej transakcií ako miesta v blokoch. Uvedomte si však, že ak bude vyšší dopyt po transakciách ako dokáže sieť spracovať, môže byť vaša transakcia odsúvaná a nepotvrdená donekonečna.</translation>
     </message>
     <message>
@@ -2190,8 +2190,8 @@
         <translation><numerusform>Odhadovaný začiatok potvrdzovania po %n bloku.</numerusform><numerusform>Odhadovaný začiatok potvrdzovania po %n blokoch.</numerusform><numerusform>Odhadovaný začiatok potvrdzovania po %n blokoch.</numerusform></translation>
     </message>
     <message>
-        <source>Warning: Invalid OpenBlock address</source>
-        <translation>Varovanie: Neplatná OpenBlock adresa</translation>
+        <source>Warning: Invalid ADRENALINE address</source>
+        <translation>Varovanie: Neplatná ADRENALINE adresa</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -2233,7 +2233,7 @@
         <translation>Toto je normálna platba.</translation>
     </message>
     <message>
-        <source>The OpenBlock address to send the payment to</source>
+        <source>The ADRENALINE address to send the payment to</source>
         <translation>Zvoľte adresu kam poslať platbu</translation>
     </message>
     <message>
@@ -2253,8 +2253,8 @@
         <translation>Odstrániť túto položku</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less openblocks than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation>Poplatok sa odpočíta od čiastky, ktorú odosielate. Príjemca dostane menej openblockov ako zadáte. Ak je vybraných viacero príjemcov, poplatok je rozdelený rovným dielom.</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less adrenalines than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation>Poplatok sa odpočíta od čiastky, ktorú odosielate. Príjemca dostane menej adrenalineov ako zadáte. Ak je vybraných viacero príjemcov, poplatok je rozdelený rovným dielom.</translation>
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
@@ -2277,8 +2277,8 @@
         <translation>Vložte popis pre túto adresu aby sa uložila do zoznamu použitých adries</translation>
     </message>
     <message>
-        <source>A message that was attached to the openblock: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the OpenBlock network.</source>
-        <translation>Správa ktorá bola pripojená k openblock: URI a ktorá bude uložená s transakcou pre Vaše potreby. Poznámka: Táto správa nebude poslaná cez sieť OpenBlock.</translation>
+        <source>A message that was attached to the adrenaline: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the ADRENALINE network.</source>
+        <translation>Správa ktorá bola pripojená k adrenaline: URI a ktorá bude uložená s transakcou pre Vaše potreby. Poznámka: Táto správa nebude poslaná cez sieť ADRENALINE.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -2322,12 +2322,12 @@
         <translation>&amp;Podpísať Správu</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive openblocks sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <source>You can sign messages/agreements with your addresses to prove you can receive adrenalines sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation>Môžete podpísať správy svojou adresou a dokázať, že viete prijímať mince zaslané na túto adresu. Buďte však opatrní a podpíšte len podrobné prehlásenia, s ktorými plne súhlasíte, nakoľko útoky typu "phishing" Vás môžu lákať k podpísaniu nejasných alebo príliš všeobecných tvrdení čím prevezmú vašu identitu.</translation>
     </message>
     <message>
-        <source>The OpenBlock address to sign the message with</source>
-        <translation>OpenBlock adresa pre podpísanie správy s</translation>
+        <source>The ADRENALINE address to sign the message with</source>
+        <translation>ADRENALINE adresa pre podpísanie správy s</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2358,7 +2358,7 @@
         <translation>Kopírovať tento podpis do systémovej schránky</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this OpenBlock address</source>
+        <source>Sign the message to prove you own this ADRENALINE address</source>
         <translation>Podpíšte správu aby ste dokázali že vlastníte túto adresu</translation>
     </message>
     <message>
@@ -2382,12 +2382,12 @@
         <translation>Vložte adresu príjemcu, správu (uistite sa, že presne kopírujete ukončenia riadkov, medzery, odrážky, atď.) a podpis pre potvrdenie správy. Buďte opatrní a nedomýšľajte si viac než je uvedené v samotnej podpísanej správe a môžete sa tak vyhnúť podvodu MITM útokom. Toto len potvrdzuje, že podpisujúca strana môže prijímať na tejto adrese, nepotvrdzuje to vlastníctvo žiadnej transakcie!</translation>
     </message>
     <message>
-        <source>The OpenBlock address the message was signed with</source>
-        <translation>Adresa OpenBlock, ktorou bola podpísaná správa</translation>
+        <source>The ADRENALINE address the message was signed with</source>
+        <translation>Adresa ADRENALINE, ktorou bola podpísaná správa</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified OpenBlock address</source>
-        <translation>Overím správy sa uistiť že bola podpísaná označenou OpenBlock adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified ADRENALINE address</source>
+        <translation>Overím správy sa uistiť že bola podpísaná označenou ADRENALINE adresou</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -2933,7 +2933,7 @@
     </message>
 </context>
 <context>
-    <name>openblock-core</name>
+    <name>adrenaline-core</name>
     <message>
         <source>Options:</source>
         <translation>Možnosti:</translation>
@@ -2987,8 +2987,8 @@
         <translation>Nepodarilo sa spustiť HTTP server. Pre viac detailov zobrazte debug log.</translation>
     </message>
     <message>
-        <source>OpenBlock Core</source>
-        <translation>OpenBlock Core</translation>
+        <source>ADRENALINE Core</source>
+        <translation>ADRENALINE Core</translation>
     </message>
     <message>
         <source>The %s developers</source>

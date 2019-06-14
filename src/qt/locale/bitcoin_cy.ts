@@ -84,7 +84,7 @@
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>OpenBlockGUI</name>
+    <name>ADRENALINEGUI</name>
     <message>
         <source>Synchronizing with network...</source>
         <translation>Cysoni â'r rhwydwaith...</translation>
@@ -154,8 +154,8 @@
         <translation>Newid y cyfrinymadrodd a ddefnyddiwyd ar gyfer amgryptio'r waled</translation>
     </message>
     <message>
-        <source>OpenBlock</source>
-        <translation>OpenBlock</translation>
+        <source>ADRENALINE</source>
+        <translation>ADRENALINE</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -634,14 +634,14 @@
     </message>
     </context>
 <context>
-    <name>openblock-core</name>
+    <name>adrenaline-core</name>
     <message>
         <source>Options:</source>
         <translation>Opsiynau:</translation>
     </message>
     <message>
-        <source>OpenBlock Core</source>
-        <translation>Craidd OpenBlock</translation>
+        <source>ADRENALINE Core</source>
+        <translation>Craidd ADRENALINE</translation>
     </message>
     <message>
         <source>Information</source>

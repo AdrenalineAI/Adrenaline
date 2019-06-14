@@ -531,7 +531,7 @@ std::string HelpMessage(HelpMessageMode mode)
 
 std::string LicenseInfo()
 {
-    const std::string URL_SOURCE_CODE = "<https://github.com/openblock/openblock>";
+    const std::string URL_SOURCE_CODE = "<https://github.com/adrenaline/adrenaline>";
     const std::string URL_WEBSITE = "<https://viacoin.org>";
 
     return CopyrightHolders(strprintf(_("Copyright (C) %i-%i"), 2014, COPYRIGHT_YEAR) + " ") + "\n" +
@@ -647,9 +647,9 @@ void ThreadImport(std::vector<fs::path> vImportFiles)
             CDiskBlockPos pos(nFile, 0);
             if (!fs::exists(GetBlockPosFilename(pos, "blk")))
                 break; // No block files left to reindex
-            FILE *file = OpenBlockFile(pos, true);
+            FILE *file = ADRENALINEFile(pos, true);
             if (!file)
-                break; // This error is logged in OpenBlockFile
+                break; // This error is logged in ADRENALINEFile
             LogPrintf("Reindexing block file blk%05u.dat...\n", (unsigned int)nFile);
             LoadExternalBlockFile(chainparams, file, &pos);
             nFile++;
@@ -830,7 +830,7 @@ void InitLogging()
     fLogIPs = gArgs.GetBoolArg("-logips", DEFAULT_LOGIPS);
 
     LogPrintf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-    LogPrintf("OpenBlock version %s\n", FormatFullVersion());
+    LogPrintf("ADRENALINE version %s\n", FormatFullVersion());
 }
 
 namespace { // Variables internal to initialization process only

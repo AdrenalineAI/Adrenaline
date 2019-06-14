@@ -229,7 +229,7 @@ Kérem a kulcsmondatban használjon &lt;b&gt; tíz vagy több véletlenszerű ka
     </message>
 </context>
 <context>
-    <name>OpenBlockGUI</name>
+    <name>ADRENALINEGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Üzenet aláírása...</translation>
@@ -331,8 +331,8 @@ Kérem a kulcsmondatban használjon &lt;b&gt; tíz vagy több véletlenszerű ka
         <translation>Lemezen lévő blokkok újraindexelése...</translation>
     </message>
     <message>
-        <source>Send coins to a OpenBlock address</source>
-        <translation>OpenBlock küldése megadott címre</translation>
+        <source>Send coins to a ADRENALINE address</source>
+        <translation>ADRENALINE küldése megadott címre</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -355,8 +355,8 @@ Kérem a kulcsmondatban használjon &lt;b&gt; tíz vagy több véletlenszerű ka
         <translation>Üzenet &amp;valódiságának ellenőrzése</translation>
     </message>
     <message>
-        <source>OpenBlock</source>
-        <translation>OpenBlock</translation>
+        <source>ADRENALINE</source>
+        <translation>ADRENALINE</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -383,12 +383,12 @@ Kérem a kulcsmondatban használjon &lt;b&gt; tíz vagy több véletlenszerű ka
         <translation>A tárcádhoz tartozó privát kulcsok titkosítása</translation>
     </message>
     <message>
-        <source>Sign messages with your OpenBlock addresses to prove you own them</source>
-        <translation>Üzenetek aláírása a OpenBlock-címmeiddel, amivel bizonyítod, hogy a cím a sajátod</translation>
+        <source>Sign messages with your ADRENALINE addresses to prove you own them</source>
+        <translation>Üzenetek aláírása a ADRENALINE-címmeiddel, amivel bizonyítod, hogy a cím a sajátod</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified OpenBlock addresses</source>
-        <translation>Üzenetek ellenőrzése, hogy valóban a megjelölt OpenBlock-címekkel vannak-e aláírva</translation>
+        <source>Verify messages to ensure they were signed with specified ADRENALINE addresses</source>
+        <translation>Üzenetek ellenőrzése, hogy valóban a megjelölt ADRENALINE-címekkel vannak-e aláírva</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -407,8 +407,8 @@ Kérem a kulcsmondatban használjon &lt;b&gt; tíz vagy több véletlenszerű ka
         <translation>Fül eszköztár</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and openblock: URIs)</source>
-        <translation>Fizetési kérelem (QR-kódot és "openblock:" URI azonosítót hoz létre)</translation>
+        <source>Request payments (generates QR codes and adrenaline: URIs)</source>
+        <translation>Fizetési kérelem (QR-kódot és "adrenaline:" URI azonosítót hoz létre)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -419,16 +419,16 @@ Kérem a kulcsmondatban használjon &lt;b&gt; tíz vagy több véletlenszerű ka
         <translation>A használt fogadó címek és címkék megtekintése</translation>
     </message>
     <message>
-        <source>Open a openblock: URI or payment request</source>
-        <translation>"openblock:" URI azonosító vagy fizetési kérelem megnyitása</translation>
+        <source>Open a adrenaline: URI or payment request</source>
+        <translation>"adrenaline:" URI azonosító vagy fizetési kérelem megnyitása</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>Paran&amp;cssor kapcsolók</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to OpenBlock network</source>
-        <translation><numerusform>%n aktív kapcsolat a OpenBlock hálózathoz</numerusform><numerusform>%n aktív kapcsolat a OpenBlock hálózathoz</numerusform></translation>
+        <source>%n active connection(s) to ADRENALINE network</source>
+        <translation><numerusform>%n aktív kapcsolat a ADRENALINE hálózathoz</numerusform><numerusform>%n aktív kapcsolat a ADRENALINE hálózathoz</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -1026,15 +1026,15 @@ Kérem a kulcsmondatban használjon &lt;b&gt; tíz vagy több véletlenszerű ka
     </message>
     <message>
         <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>A OpenBlock-kliens portjának automatikus megnyitása a routeren. Ez csak akkor működik, ha a routered támogatja az UPnP-t és az engedélyezve is van rajta.</translation>
+        <translation>A ADRENALINE-kliens portjának automatikus megnyitása a routeren. Ez csak akkor működik, ha a routered támogatja az UPnP-t és az engedélyezve is van rajta.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>&amp;UPnP port-feltérképezés</translation>
     </message>
     <message>
-        <source>Connect to the OpenBlock network through a SOCKS5 proxy.</source>
-        <translation>Csatlakozás a OpenBlock hálózatához SOCKS5 proxyn keresztül</translation>
+        <source>Connect to the ADRENALINE network through a SOCKS5 proxy.</source>
+        <translation>Csatlakozás a ADRENALINE hálózatához SOCKS5 proxyn keresztül</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1168,8 +1168,8 @@ Kérem a kulcsmondatban használjon &lt;b&gt; tíz vagy több véletlenszerű ka
         <translation>Űrlap</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the OpenBlock network after a connection is established, but this process has not completed yet.</source>
-        <translation>A kijelzett információ lehet, hogy elavult. A pénztárcája automatikusan szinkronizálja magát a OpenBlock hálózattal miután a kapcsolat létrejön, de ez e folyamat még nem fejeződött be.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the ADRENALINE network after a connection is established, but this process has not completed yet.</source>
+        <translation>A kijelzett információ lehet, hogy elavult. A pénztárcája automatikusan szinkronizálja magát a ADRENALINE hálózattal miután a kapcsolat létrejön, de ez e folyamat még nem fejeződött be.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1345,8 +1345,8 @@ Kérem a kulcsmondatban használjon &lt;b&gt; tíz vagy több véletlenszerű ka
         <translation>Összeg</translation>
     </message>
     <message>
-        <source>Enter a OpenBlock address (e.g. %1)</source>
-        <translation>Ad meg egy OpenBlock címet (pl: %1)</translation>
+        <source>Enter a ADRENALINE address (e.g. %1)</source>
+        <translation>Ad meg egy ADRENALINE címet (pl: %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2090,7 +2090,7 @@ Kérem a kulcsmondatban használjon &lt;b&gt; tíz vagy több véletlenszerű ka
         <translation>Csak a szükséges %1 díj fizetése</translation>
     </message>
     <message>
-        <source>Warning: Invalid OpenBlock address</source>
+        <source>Warning: Invalid ADRENALINE address</source>
         <translation>Figyelmeztetés: Érvénytelen Bitcoin cím</translation>
     </message>
     <message>
@@ -2749,7 +2749,7 @@ Kérem a kulcsmondatban használjon &lt;b&gt; tíz vagy több véletlenszerű ka
     </message>
 </context>
 <context>
-    <name>openblock-core</name>
+    <name>adrenaline-core</name>
     <message>
         <source>Options:</source>
         <translation>Opciók
@@ -2787,8 +2787,8 @@ Kérem a kulcsmondatban használjon &lt;b&gt; tíz vagy több véletlenszerű ka
 </translation>
     </message>
     <message>
-        <source>OpenBlock Core</source>
-        <translation>OpenBlock Core</translation>
+        <source>ADRENALINE Core</source>
+        <translation>ADRENALINE Core</translation>
     </message>
     <message>
         <source>The %s developers</source>
@@ -3002,7 +3002,7 @@ Kérem a kulcsmondatban használjon &lt;b&gt; tíz vagy több véletlenszerű ka
     </message>
     <message>
         <source>Insufficient funds</source>
-        <translation>Nincs elég openblockod.</translation>
+        <translation>Nincs elég adrenalineod.</translation>
     </message>
     <message>
         <source>Loading block index...</source>

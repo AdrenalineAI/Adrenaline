@@ -104,7 +104,7 @@
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>OpenBlockGUI</name>
+    <name>ADRENALINEGUI</name>
     <message>
         <source>Synchronizing with network...</source>
         <translation>Võrguga sünkroniseerimine...</translation>
@@ -130,8 +130,8 @@
         <translation>Kõvakettal olevate plokkide reindekseerimine...</translation>
     </message>
     <message>
-        <source>OpenBlock</source>
-        <translation>OpenBlock</translation>
+        <source>ADRENALINE</source>
+        <translation>ADRENALINE</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -754,14 +754,14 @@
     </message>
     </context>
 <context>
-    <name>openblock-core</name>
+    <name>adrenaline-core</name>
     <message>
         <source>Options:</source>
         <translation>Valikud:</translation>
     </message>
     <message>
-        <source>OpenBlock Core</source>
-        <translation>OpenBlock Core</translation>
+        <source>ADRENALINE Core</source>
+        <translation>ADRENALINE Core</translation>
     </message>
     <message>
         <source>Information</source>

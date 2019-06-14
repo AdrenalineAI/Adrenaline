@@ -88,7 +88,7 @@
     </message>
 </context>
 <context>
-    <name>OpenBlockGUI</name>
+    <name>ADRENALINEGUI</name>
     <message>
         <source>&amp;Transactions</source>
         <translation>Transazioni</translation>
@@ -202,6 +202,6 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>openblock-core</name>
+    <name>adrenaline-core</name>
     </context>
 </TS>

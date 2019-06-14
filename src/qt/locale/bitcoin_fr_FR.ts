@@ -43,11 +43,11 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>Choisissez une adresse où envoyer les openblocks</translation>
+        <translation>Choisissez une adresse où envoyer les adrenalines</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>Choisissez une adresse où recevoir les openblocks</translation>
+        <translation>Choisissez une adresse où recevoir les adrenalines</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -128,8 +128,8 @@
         <translation>Décrypter le porte-monnaie</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR OPENBLOCKS&lt;/b&gt;!</source>
-        <translation>Attention : Si vous chiffrez votre portefeuille et que vous perdez votre mot de passe vous &lt;b&gt; PERDREZ TOUS VOS OPENBLOCKS&lt;/b&gt; !</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ADRENALINES&lt;/b&gt;!</source>
+        <translation>Attention : Si vous chiffrez votre portefeuille et que vous perdez votre mot de passe vous &lt;b&gt; PERDREZ TOUS VOS ADRENALINES&lt;/b&gt; !</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -148,7 +148,7 @@
     </message>
 </context>
 <context>
-    <name>OpenBlockGUI</name>
+    <name>ADRENALINEGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Signer un &amp;message...</translation>
@@ -238,8 +238,8 @@
         <translation>Réindexer les blocs sur le disque...</translation>
     </message>
     <message>
-        <source>Send coins to a OpenBlock address</source>
-        <translation>Envoyer des pièces à une adresse OpenBlock</translation>
+        <source>Send coins to a ADRENALINE address</source>
+        <translation>Envoyer des pièces à une adresse ADRENALINE</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -262,8 +262,8 @@
         <translation>&amp;Vérification du message</translation>
     </message>
     <message>
-        <source>OpenBlock</source>
-        <translation>OpenBlock</translation>
+        <source>ADRENALINE</source>
+        <translation>ADRENALINE</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -290,8 +290,8 @@
         <translation>Crypter les clé privées qui appartiennent votre portefeuille</translation>
     </message>
     <message>
-        <source>Sign messages with your OpenBlock addresses to prove you own them</source>
-        <translation>Signer vos messages avec vos adresses OpenBlock pour prouver que vous les détenez</translation>
+        <source>Sign messages with your ADRENALINE addresses to prove you own them</source>
+        <translation>Signer vos messages avec vos adresses ADRENALINE pour prouver que vous les détenez</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -310,24 +310,24 @@
         <translation>Barre d'outils des onglets</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and openblock: URIs)</source>
-        <translation>Demander des paiements (générer QR codes et openblock: URIs)</translation>
+        <source>Request payments (generates QR codes and adrenaline: URIs)</source>
+        <translation>Demander des paiements (générer QR codes et adrenaline: URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
         <translation>Montrer la liste des adresses d'envois utilisées et les étiquettes</translation>
     </message>
     <message>
-        <source>Open a openblock: URI or payment request</source>
-        <translation>Ouvrir un openblock: URI ou demande de paiement</translation>
+        <source>Open a adrenaline: URI or payment request</source>
+        <translation>Ouvrir un adrenaline: URI ou demande de paiement</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>&amp;Options de ligne de commande</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to OpenBlock network</source>
-        <translation><numerusform>%n connexion active au réseau OpenBlock</numerusform><numerusform>%n connexions actives au réseau OpenBlock</numerusform></translation>
+        <source>%n active connection(s) to ADRENALINE network</source>
+        <translation><numerusform>%n connexion active au réseau ADRENALINE</numerusform><numerusform>%n connexions actives au réseau ADRENALINE</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -712,8 +712,8 @@
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically open the OpenBlock client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Ouvrir le port du client OpenBlock automatiquement sur le routeur. Cela ne fonctionne que si votre routeur supporte l'UPnP et si la fonctionnalité est activée.</translation>
+        <source>Automatically open the ADRENALINE client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Ouvrir le port du client ADRENALINE automatiquement sur le routeur. Cela ne fonctionne que si votre routeur supporte l'UPnP et si la fonctionnalité est activée.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -872,8 +872,8 @@
         <translation>Montant</translation>
     </message>
     <message>
-        <source>Enter a OpenBlock address (e.g. %1)</source>
-        <translation>Entrer une adresse OpenBlock (e.g. %1)</translation>
+        <source>Enter a ADRENALINE address (e.g. %1)</source>
+        <translation>Entrer une adresse ADRENALINE (e.g. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1708,7 +1708,7 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>openblock-core</name>
+    <name>adrenaline-core</name>
     <message>
         <source>Options:</source>
         <translation>Options :</translation>
@@ -1734,8 +1734,8 @@
         <translation>Impossible de démarrer le serveur HTTP. Voir le journal de débogage pour plus de détails.</translation>
     </message>
     <message>
-        <source>OpenBlock Core</source>
-        <translation>OpenBlock Core</translation>
+        <source>ADRENALINE Core</source>
+        <translation>ADRENALINE Core</translation>
     </message>
     <message>
         <source>&lt;category&gt; can be:</source>

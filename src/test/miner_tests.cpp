@@ -641,15 +641,15 @@ BOOST_AUTO_TEST_CASE(CreateNewBlock_validity)
     std::vector<CTransactionRef> txFirst;
     for (unsigned int i = 0; i < sizeof(blockinfo)/sizeof(*blockinfo); ++i)
     {
-        // OpenBlock: Begin
+        // ADRENALINE: Begin
         if (i == 1 || i >= 3599) {
-            // OpenBlock needs coinbase value reset after first block; diff change starts at block 3600
+            // ADRENALINE needs coinbase value reset after first block; diff change starts at block 3600
             uint256 hashPrevBlock = pblocktemplate->block.hashPrevBlock;
             pblocktemplate.reset();
             BOOST_CHECK(pblocktemplate = BlockAssembler(chainparams).CreateNewBlock(scriptPubKey));
             pblocktemplate->block.hashPrevBlock = hashPrevBlock;
         }
-        // OpenBlock: End
+        // ADRENALINE: End
         CBlock *pblock = &pblocktemplate->block; // pointer for convenience
         pblock->nVersion = 1;
         pblock->nTime = chainActive.Tip()->GetMedianTimePast()+1;
@@ -657,7 +657,7 @@ BOOST_AUTO_TEST_CASE(CreateNewBlock_validity)
         txCoinbase.nVersion = 1;
         txCoinbase.vin[0].scriptSig = CScript();
         txCoinbase.vin[0].scriptSig.push_back(blockinfo[i].extranonce);
-        txCoinbase.vin[0].scriptSig.push_back(chainActive.Height() >> 8); // OpenBlock
+        txCoinbase.vin[0].scriptSig.push_back(chainActive.Height() >> 8); // ADRENALINE
         txCoinbase.vin[0].scriptSig.push_back(chainActive.Height());
         txCoinbase.vout.resize(1); // Ignore the (optional) segwit commitment added by CreateNewBlock (as the hardcoded nonces don't account for this)
         txCoinbase.vout[0].scriptPubKey = CScript();
@@ -755,7 +755,7 @@ BOOST_AUTO_TEST_CASE(CreateNewBlock_validity)
     tx.vout[0].nValue = tx.vout[0].nValue+BLOCKSUBSIDY-HIGHERFEE; //First txn output + fresh coinbase - new txn fee
     hash = tx.GetHash();
     mempool.addUnchecked(hash, entry.Fee(HIGHERFEE).Time(GetTime()).SpendsCoinbase(true).FromTx(tx));
-    // OpenBlock has zero reward in genesys, unspendable
+    // ADRENALINE has zero reward in genesys, unspendable
     //BOOST_CHECK(pblocktemplate = AssemblerForTest(chainparams).CreateNewBlock(scriptPubKey));
     mempool.clear();
 
@@ -911,7 +911,7 @@ BOOST_AUTO_TEST_CASE(CreateNewBlock_validity)
     tx.vin[0].nSequence = CTxIn::SEQUENCE_LOCKTIME_TYPE_FLAG | 1;
     BOOST_CHECK(!TestSequenceLocks(tx, flags)); // Sequence locks fail
 
-    // OpenBlock cannot spend multiple inputs as starting blocks have a single non-zero one
+    // ADRENALINE cannot spend multiple inputs as starting blocks have a single non-zero one
     /*
     BOOST_CHECK(pblocktemplate = AssemblerForTest(chainparams).CreateNewBlock(scriptPubKey));
 
@@ -934,7 +934,7 @@ BOOST_AUTO_TEST_CASE(CreateNewBlock_validity)
     SetMockTime(0);
     mempool.clear();
 
-    // OpenBlock cannot spend multiple inputs as starting blocks have a single non-zero one
+    // ADRENALINE cannot spend multiple inputs as starting blocks have a single non-zero one
     //TestPackageSelection(chainparams, scriptPubKey, txFirst);
 
     fCheckpointsEnabled = true;

@@ -62,12 +62,12 @@
         <translation>Ontvanger adresse</translation>
     </message>
     <message>
-        <source>These are your OpenBlock addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Hierdie is die adresse vanwaar u OpenBlock betalings stuur. U moet altyd die bedrag en die adres van die ontvanger nagaan voordat u enige munte stuur.</translation>
+        <source>These are your ADRENALINE addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Hierdie is die adresse vanwaar u ADRENALINE betalings stuur. U moet altyd die bedrag en die adres van die ontvanger nagaan voordat u enige munte stuur.</translation>
     </message>
     <message>
-        <source>These are your OpenBlock addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Hierdie is die adresse waar u OpenBlocks sal ontvang. Ons beveel aan dat u 'n nuwe adres kies vir elke transaksie</translation>
+        <source>These are your ADRENALINE addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Hierdie is die adresse waar u ADRENALINEs sal ontvang. Ons beveel aan dat u 'n nuwe adres kies vir elke transaksie</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -168,8 +168,8 @@
         <translation>Bevestig dat die beursie gekodifiseer is</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR OPENBLOCKS&lt;/b&gt;!</source>
-        <translation>Waarskuwing: Indien u die beursie kodifiseer en u vergeet u wagwoord &lt;b&gt;VERLOOR U AL U OPENBLOCKS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ADRENALINES&lt;/b&gt;!</source>
+        <translation>Waarskuwing: Indien u die beursie kodifiseer en u vergeet u wagwoord &lt;b&gt;VERLOOR U AL U ADRENALINES&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -228,7 +228,7 @@
     </message>
 </context>
 <context>
-    <name>OpenBlockGUI</name>
+    <name>ADRENALINEGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Teken &amp;boodskap...</translation>
@@ -330,8 +330,8 @@
         <translation>Besig met herindeksering van blokke op hardeskyf...</translation>
     </message>
     <message>
-        <source>Send coins to a OpenBlock address</source>
-        <translation>Stuur munte na 'n OpenBlock adres</translation>
+        <source>Send coins to a ADRENALINE address</source>
+        <translation>Stuur munte na 'n ADRENALINE adres</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -350,8 +350,8 @@
         <translation>Maak ontfouting en diagnostiese konsole oop</translation>
     </message>
     <message>
-        <source>OpenBlock</source>
-        <translation>OpenBlock</translation>
+        <source>ADRENALINE</source>
+        <translation>ADRENALINE</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -378,12 +378,12 @@
         <translation>Kodifiseer die private sleutes wat aan jou beursie gekoppel is.</translation>
     </message>
     <message>
-        <source>Sign messages with your OpenBlock addresses to prove you own them</source>
-        <translation>Onderteken boodskappe met u OpenBlock adresse om u eienaarskap te bewys</translation>
+        <source>Sign messages with your ADRENALINE addresses to prove you own them</source>
+        <translation>Onderteken boodskappe met u ADRENALINE adresse om u eienaarskap te bewys</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified OpenBlock addresses</source>
-        <translation>Verifieër boodskappe om seker te maak dat dit met die gespesifiseerde OpenBlock adresse</translation>
+        <source>Verify messages to ensure they were signed with specified ADRENALINE addresses</source>
+        <translation>Verifieër boodskappe om seker te maak dat dit met die gespesifiseerde ADRENALINE adresse</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -398,8 +398,8 @@
         <translation>Orebalk</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and openblock: URIs)</source>
-        <translation>Versoek betalings (genereer QR-kodes en openblock: URI's)</translation>
+        <source>Request payments (generates QR codes and adrenaline: URIs)</source>
+        <translation>Versoek betalings (genereer QR-kodes en adrenaline: URI's)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -410,8 +410,8 @@
         <translation>Vertoon die lys van gebruikte ontvangers-adresse en etikette</translation>
     </message>
     <message>
-        <source>Open a openblock: URI or payment request</source>
-        <translation>Skep 'n openblock: URI of betalingsversoek</translation>
+        <source>Open a adrenaline: URI or payment request</source>
+        <translation>Skep 'n adrenaline: URI of betalingsversoek</translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -1010,10 +1010,10 @@
     </message>
     </context>
 <context>
-    <name>openblock-core</name>
+    <name>adrenaline-core</name>
     <message>
-        <source>OpenBlock Core</source>
-        <translation>OpenBlock Kern</translation>
+        <source>ADRENALINE Core</source>
+        <translation>ADRENALINE Kern</translation>
     </message>
     <message>
         <source>Information</source>

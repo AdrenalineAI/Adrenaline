@@ -1,11 +1,11 @@
 Benchmarking
 ============
 
-OpenBlock Core has an internal benchmarking framework, with benchmarks
+ADRENALINE Core has an internal benchmarking framework, with benchmarks
 for cryptographic algorithms such as SHA1, SHA256, SHA512 and RIPEMD160. As well as the rolling bloom filter.
 
-After compiling openblock-core, the benchmarks can be run with:
-`src/bench/bench_openblock`
+After compiling adrenaline-core, the benchmarks can be run with:
+`src/bench/bench_adrenaline`
 
 The output will look similar to:
 ```

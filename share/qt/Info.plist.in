@@ -29,16 +29,16 @@
   <string>????</string>
 
   <key>CFBundleExecutable</key>
-  <string>OpenBlock-Qt</string>
+  <string>ADRENALINE-Qt</string>
   
   <key>CFBundleName</key>
-  <string>OpenBlock-Qt</string>
+  <string>ADRENALINE-Qt</string>
 
   <key>LSHasLocalizedDisplayName</key>
   <true/>
 
   <key>CFBundleIdentifier</key>
-  <string>org.openblock.OpenBlock-Qt</string>
+  <string>org.adrenaline.ADRENALINE-Qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -46,10 +46,10 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>org.openblock.OpenBlockPayment</string>
+      <string>org.adrenaline.ADRENALINEPayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
-        <string>openblock</string>
+        <string>adrenaline</string>
       </array>
     </dict>
   </array>
@@ -58,9 +58,9 @@
   <array>
     <dict>
       <key>UTTypeIdentifier</key>
-      <string>org.openblock.paymentrequest</string>
+      <string>org.adrenaline.paymentrequest</string>
       <key>UTTypeDescription</key>
-      <string>OpenBlock payment request</string>
+      <string>ADRENALINE payment request</string>
       <key>UTTypeConformsTo</key>
       <array>
         <string>public.data</string>
@@ -68,10 +68,10 @@
       <key>UTTypeTagSpecification</key>
       <dict>
         <key>public.mime-type</key>
-        <string>application/x-openblock-payment-request</string>
+        <string>application/x-adrenaline-payment-request</string>
         <key>public.filename-extension</key>
         <array>
-          <string>openblockpaymentrequest</string>
+          <string>adrenalinepaymentrequest</string>
         </array>
       </dict>
     </dict>
@@ -84,7 +84,7 @@
       <string>Editor</string>
       <key>LSItemContentTypes</key>
       <array>
-        <string>org.openblock.paymentrequest</string>
+        <string>org.adrenaline.paymentrequest</string>
       </array>
       <key>LSHandlerRank</key>
       <string>Owner</string>

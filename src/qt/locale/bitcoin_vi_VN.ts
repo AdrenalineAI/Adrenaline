@@ -96,7 +96,7 @@
     </message>
 </context>
 <context>
-    <name>OpenBlockGUI</name>
+    <name>ADRENALINEGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Chứ ký &amp; Tin nhắn...</translation>
@@ -186,8 +186,8 @@
         <translation>Đánh chỉ số (indexing) lại các khối (blocks) trên ổ đĩa ...</translation>
     </message>
     <message>
-        <source>Send coins to a OpenBlock address</source>
-        <translation>Gửi coins đến tài khoản OpenBlock</translation>
+        <source>Send coins to a ADRENALINE address</source>
+        <translation>Gửi coins đến tài khoản ADRENALINE</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -206,8 +206,8 @@
         <translation>&amp;Tin nhắn xác thực</translation>
     </message>
     <message>
-        <source>OpenBlock</source>
-        <translation>OpenBlock</translation>
+        <source>ADRENALINE</source>
+        <translation>ADRENALINE</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -234,12 +234,12 @@
         <translation>Mã hoá các khoá bí mật trong Ví của bạn.</translation>
     </message>
     <message>
-        <source>Sign messages with your OpenBlock addresses to prove you own them</source>
-        <translation>Dùng địa chỉ OpenBlock của bạn ký các tin nhắn để xác minh những nội dung tin nhắn đó là của bạn.</translation>
+        <source>Sign messages with your ADRENALINE addresses to prove you own them</source>
+        <translation>Dùng địa chỉ ADRENALINE của bạn ký các tin nhắn để xác minh những nội dung tin nhắn đó là của bạn.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified OpenBlock addresses</source>
-        <translation>Kiểm tra các tin nhắn để chắc chắn rằng chúng được ký bằng các địa chỉ OpenBlock xác định.</translation>
+        <source>Verify messages to ensure they were signed with specified ADRENALINE addresses</source>
+        <translation>Kiểm tra các tin nhắn để chắc chắn rằng chúng được ký bằng các địa chỉ ADRENALINE xác định.</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -258,8 +258,8 @@
         <translation>Thanh công cụ (toolbar)</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and openblock: URIs)</source>
-        <translation>Yêu cầu thanh toán(tạo mã QR và địa chỉ OpenBlock: URLs)</translation>
+        <source>Request payments (generates QR codes and adrenaline: URIs)</source>
+        <translation>Yêu cầu thanh toán(tạo mã QR và địa chỉ ADRENALINE: URLs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -270,8 +270,8 @@
         <translation>Hiện thỉ danh sách các địa chỉ và nhãn đã dùng để nhận.</translation>
     </message>
     <message>
-        <source>Open a openblock: URI or payment request</source>
-        <translation>Mở openblock:URL hoặc yêu cầu thanh toán</translation>
+        <source>Open a adrenaline: URI or payment request</source>
+        <translation>Mở adrenaline:URL hoặc yêu cầu thanh toán</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -536,8 +536,8 @@
         <translation>Ví</translation>
     </message>
     <message>
-        <source>Connect to the OpenBlock network through a SOCKS5 proxy.</source>
-        <translation>Kết nối đến máy chủ OpenBlock thông qua SOCKS5 proxy.</translation>
+        <source>Connect to the ADRENALINE network through a SOCKS5 proxy.</source>
+        <translation>Kết nối đến máy chủ ADRENALINE thông qua SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1012,14 +1012,14 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>openblock-core</name>
+    <name>adrenaline-core</name>
     <message>
         <source>Options:</source>
         <translation>Lựa chọn:</translation>
     </message>
     <message>
-        <source>OpenBlock Core</source>
-        <translation>OpenBlock Core</translation>
+        <source>ADRENALINE Core</source>
+        <translation>ADRENALINE Core</translation>
     </message>
     <message>
         <source>(default: %u)</source>

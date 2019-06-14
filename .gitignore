@@ -1,13 +1,13 @@
 *.tar.gz
 
 *.exe
-src/openblock
-src/openblockd
-src/openblock-cli
-src/openblock-tx
-src/test/test_openblock
-src/test/test_openblock_fuzzy
-src/qt/test/test_openblock-qt
+src/adrenaline
+src/adrenalined
+src/adrenaline-cli
+src/adrenaline-tx
+src/test/test_adrenaline
+src/test/test_adrenaline_fuzzy
+src/qt/test/test_adrenaline-qt
 
 # autoreconf
 Makefile.in
@@ -74,12 +74,12 @@ src/qt/test/moc*.cpp
 # Compilation and Qt preprocessor part
 *.qm
 Makefile
-openblock-qt
+adrenaline-qt
 Openblock-Qt.app
 
 # Unit-tests
 Makefile.test
-openblock-qt_test
+adrenaline-qt_test
 
 # Resources cpp
 qrc_*.cpp
@@ -92,7 +92,7 @@ build
 *.gcno
 *.gcda
 /*.info
-test_openblock.coverage/
+test_adrenaline.coverage/
 total.coverage/
 coverage_percent.txt
 

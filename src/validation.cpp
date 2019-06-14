@@ -50,7 +50,7 @@
 #include <boost/thread.hpp>
 
 #if defined(NDEBUG)
-# error "OpenBlock cannot be compiled without assertions."
+# error "ADRENALINE cannot be compiled without assertions."
 #endif
 
 /**
@@ -93,7 +93,7 @@ static void CheckBlockIndex(const Consensus::Params& consensusParams);
 /** Constant stuff for coinbase transactions we create: */
 CScript COINBASE_FLAGS;
 
-const std::string strMessageMagic = "OpenBlock Signed Message:\n";
+const std::string strMessageMagic = "ADRENALINE Signed Message:\n";
 
 // Internal stuff
 namespace {
@@ -934,9 +934,9 @@ bool GetTransaction(const uint256 &hash, CTransactionRef &txOut, const Consensus
     if (fTxIndex) {
         CDiskTxPos postx;
         if (pblocktree->ReadTxIndex(hash, postx)) {
-            CAutoFile file(OpenBlockFile(postx, true), SER_DISK, CLIENT_VERSION);
+            CAutoFile file(ADRENALINEFile(postx, true), SER_DISK, CLIENT_VERSION);
             if (file.IsNull())
-                return error("%s: OpenBlockFile failed", __func__);
+                return error("%s: ADRENALINEFile failed", __func__);
             CBlockHeader header;
             try {
                 file >> header;
@@ -986,9 +986,9 @@ bool GetTransaction(const uint256 &hash, CTransactionRef &txOut, const Consensus
 static bool WriteBlockToDisk(const CBlock& block, CDiskBlockPos& pos, const CMessageHeader::MessageStartChars& messageStart)
 {
     // Open history file to append
-    CAutoFile fileout(OpenBlockFile(pos), SER_DISK, CLIENT_VERSION);
+    CAutoFile fileout(ADRENALINEFile(pos), SER_DISK, CLIENT_VERSION);
     if (fileout.IsNull())
-        return error("WriteBlockToDisk: OpenBlockFile failed");
+        return error("WriteBlockToDisk: ADRENALINEFile failed");
 
     // Write index header
     unsigned int nSize = GetSerializeSize(fileout, block);
@@ -1009,9 +1009,9 @@ bool ReadBlockFromDisk(CBlock& block, const CDiskBlockPos& pos, const Consensus:
     block.SetNull();
 
     // Open history file to read
-    CAutoFile filein(OpenBlockFile(pos, true), SER_DISK, CLIENT_VERSION);
+    CAutoFile filein(ADRENALINEFile(pos, true), SER_DISK, CLIENT_VERSION);
     if (filein.IsNull())
-        return error("ReadBlockFromDisk: OpenBlockFile failed for %s", pos.ToString());
+        return error("ReadBlockFromDisk: ADRENALINEFile failed for %s", pos.ToString());
 
     // Read block
     try {
@@ -1040,7 +1040,7 @@ bool ReadBlockFromDisk(CBlock& block, const CBlockIndex* pindex, const Consensus
 
 CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
 {
-    // OpenBlock schedule
+    // ADRENALINE schedule
     CAmount nSubsidy = 0;
 
     if (nHeight == 1) {
@@ -1533,7 +1533,7 @@ void static FlushBlockFile(bool fFinalize = false)
 
     CDiskBlockPos posOld(nLastBlockFile, 0);
 
-    FILE *fileOld = OpenBlockFile(posOld);
+    FILE *fileOld = ADRENALINEFile(posOld);
     if (fileOld) {
         if (fFinalize)
             TruncateFile(fileOld, vinfoBlockFile[nLastBlockFile].nSize);
@@ -2762,7 +2762,7 @@ static bool FindBlockPos(CValidationState &state, CDiskBlockPos &pos, unsigned i
             if (fPruneMode)
                 fCheckForPruning = true;
             if (CheckDiskSpace(nNewChunks * BLOCKFILE_CHUNK_SIZE - pos.nPos)) {
-                FILE *file = OpenBlockFile(pos);
+                FILE *file = ADRENALINEFile(pos);
                 if (file) {
                     LogPrintf("Pre-allocating up to position 0x%x in blk%05u.dat\n", nNewChunks * BLOCKFILE_CHUNK_SIZE, pos.nFile);
                     AllocateFileRange(file, pos.nPos, nNewChunks * BLOCKFILE_CHUNK_SIZE - pos.nPos);
@@ -3483,7 +3483,7 @@ static FILE* OpenDiskFile(const CDiskBlockPos &pos, const char *prefix, bool fRe
     return file;
 }
 
-FILE* OpenBlockFile(const CDiskBlockPos &pos, bool fReadOnly) {
+FILE* ADRENALINEFile(const CDiskBlockPos &pos, bool fReadOnly) {
     return OpenDiskFile(pos, "blk", fReadOnly);
 }
 
@@ -3596,7 +3596,7 @@ bool static LoadBlockIndexDB(const CChainParams& chainparams)
     for (std::set<int>::iterator it = setBlkDataFiles.begin(); it != setBlkDataFiles.end(); it++)
     {
         CDiskBlockPos pos(*it, 0);
-        if (CAutoFile(OpenBlockFile(pos, true), SER_DISK, CLIENT_VERSION).IsNull()) {
+        if (CAutoFile(ADRENALINEFile(pos, true), SER_DISK, CLIENT_VERSION).IsNull()) {
             return false;
         }
     }

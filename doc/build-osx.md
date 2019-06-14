@@ -24,17 +24,17 @@ If you want to build the disk image with `make deploy` (.dmg / optional), you ne
 
 NOTE: Building with Qt4 is still supported, however, could result in a broken UI. Building with Qt5 is recommended.
 
-Build OpenBlock Core
+Build ADRENALINE Core
 ------------------------
 
-1. Clone the openblock source code and cd into `openblock`
+1. Clone the adrenaline source code and cd into `adrenaline`
 
-        git clone https://github.com/openblock/openblock
-        cd openblock
+        git clone https://github.com/adrenaline/adrenaline
+        cd adrenaline
 
-2.  Build openblock-core:
+2.  Build adrenaline-core:
 
-    Configure and build the headless openblock binaries as well as the GUI (if Qt is found).
+    Configure and build the headless adrenaline binaries as well as the GUI (if Qt is found).
 
     You can disable the GUI build by passing `--without-gui` to configure.
 
@@ -53,37 +53,37 @@ Build OpenBlock Core
 Running
 -------
 
-OpenBlock Core is now available at `./src/openblockd`
+ADRENALINE Core is now available at `./src/adrenalined`
 
 Before running, it's recommended you create an RPC configuration file.
 
-    echo -e "rpcuser=openblockrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/OpenBlock/openblock.conf"
+    echo -e "rpcuser=adrenalinerpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/ADRENALINE/adrenaline.conf"
 
-    chmod 600 "/Users/${USER}/Library/Application Support/OpenBlock/openblock.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/ADRENALINE/adrenaline.conf"
 
-The first time you run openblockd, it will start downloading the blockchain. This process could take several hours.
+The first time you run adrenalined, it will start downloading the blockchain. This process could take several hours.
 
 You can monitor the download process by looking at the debug.log file:
 
-    tail -f $HOME/Library/Application\ Support/OpenBlock/debug.log
+    tail -f $HOME/Library/Application\ Support/ADRENALINE/debug.log
 
 Other commands:
 -------
 
-    ./src/openblockd -daemon # Starts the openblock daemon.
-    ./src/openblock-cli --help # Outputs a list of command-line options.
-    ./src/openblock-cli help # Outputs a list of RPC commands when the daemon is running.
+    ./src/adrenalined -daemon # Starts the adrenaline daemon.
+    ./src/adrenaline-cli --help # Outputs a list of command-line options.
+    ./src/adrenaline-cli help # Outputs a list of RPC commands when the daemon is running.
 
 Using Qt Creator as IDE
 ------------------------
-You can use Qt Creator as an IDE, for openblock development.
+You can use Qt Creator as an IDE, for adrenaline development.
 Download and install the community edition of [Qt Creator](https://www.qt.io/download/).
 Uncheck everything except Qt Creator during the installation process.
 
 1. Make sure you installed everything through Homebrew mentioned above
 2. Do a proper ./configure --enable-debug
 3. In Qt Creator do "New Project" -> Import Project -> Import Existing Project
-4. Enter "openblock-qt" as project name, enter src/qt as location
+4. Enter "adrenaline-qt" as project name, enter src/qt as location
 5. Leave the file selection as it is
 6. Confirm the "summary page"
 7. In the "Projects" tab select "Manage Kits..."

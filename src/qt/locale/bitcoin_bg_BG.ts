@@ -62,12 +62,12 @@
         <translation>Адрес за получаване</translation>
     </message>
     <message>
-        <source>These are your OpenBlock addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Тези са вашите OpenBlock адреси за изпращане на монети. Винаги проверявайте количеството и получаващия адрес преди изпращане. </translation>
+        <source>These are your ADRENALINE addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Тези са вашите ADRENALINE адреси за изпращане на монети. Винаги проверявайте количеството и получаващия адрес преди изпращане. </translation>
     </message>
     <message>
-        <source>These are your OpenBlock addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Това са вашите OpenBlock адреси за получаване на монети. Препоръчително е да ползвате нов адрес на всяка транзакция.</translation>
+        <source>These are your ADRENALINE addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Това са вашите ADRENALINE адреси за получаване на монети. Препоръчително е да ползвате нов адрес на всяка транзакция.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,7 +172,7 @@
     </message>
 </context>
 <context>
-    <name>OpenBlockGUI</name>
+    <name>ADRENALINEGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Подпиши съобщение...</translation>
@@ -418,10 +418,10 @@
     </message>
     </context>
 <context>
-    <name>openblock-core</name>
+    <name>adrenaline-core</name>
     <message>
-        <source>OpenBlock Core</source>
-        <translation>OpenBlock ядро</translation>
+        <source>ADRENALINE Core</source>
+        <translation>ADRENALINE ядро</translation>
     </message>
     </context>
 </TS>

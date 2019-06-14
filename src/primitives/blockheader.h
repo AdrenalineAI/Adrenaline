@@ -1,5 +1,5 @@
-#ifndef OPENBLOCK_BLOCKHEADER_H
-#define OPENBLOCK_BLOCKHEADER_H
+#ifndef ADRENALINE_BLOCKHEADER_H
+#define ADRENALINE_BLOCKHEADER_H
 
 #include "auxpow/consensus.h"
 #include "auxpow/serialize.h"
@@ -82,4 +82,4 @@ public:
 };
 
 
-#endif //OPENBLOCK_BLOCKHEADER_H
+#endif //ADRENALINE_BLOCKHEADER_H

@@ -13,7 +13,7 @@
 - (NSString *)__bundleIdentifier
 {
     if (self == [NSBundle mainBundle]) {
-        return @"org.openblock.OpenBlock-Qt";
+        return @"org.adrenaline.ADRENALINE-Qt";
     } else {
         return [self __bundleIdentifier];
     }

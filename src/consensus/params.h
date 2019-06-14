@@ -47,10 +47,10 @@ struct Params {
     /** Block height at which BIP66 becomes active */
     int BIP66Height;
 
-    /** OpenBlock enforcing block version 5 */
+    /** ADRENALINE enforcing block version 5 */
     int BlockVer5Height;
 
-    /** AuxPow starting height for OpenBlock */
+    /** AuxPow starting height for ADRENALINE */
     int nAuxPowStartHeight;
     int nWitnessStartHeight;
 

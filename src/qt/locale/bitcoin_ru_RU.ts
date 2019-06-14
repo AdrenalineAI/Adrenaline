@@ -152,7 +152,7 @@
     <name>BanTableModel</name>
     </context>
 <context>
-    <name>OpenBlockGUI</name>
+    <name>ADRENALINEGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Подписать &amp;сообщение...</translation>
@@ -230,8 +230,8 @@
         <translation>&amp;Проверить сообщение...</translation>
     </message>
     <message>
-        <source>OpenBlock</source>
-        <translation>OpenBlock Core</translation>
+        <source>ADRENALINE</source>
+        <translation>ADRENALINE Core</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -442,8 +442,8 @@
         <translation>Пробросить порт через &amp;UPnP</translation>
     </message>
     <message>
-        <source>Connect to the OpenBlock network through a SOCKS5 proxy.</source>
-        <translation>Подключится к сети OpenBlock через SOCKS5 прокси.</translation>
+        <source>Connect to the ADRENALINE network through a SOCKS5 proxy.</source>
+        <translation>Подключится к сети ADRENALINE через SOCKS5 прокси.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -522,7 +522,7 @@
 <context>
     <name>QObject</name>
     <message>
-        <source>Enter a OpenBlock address (e.g. %1)</source>
+        <source>Enter a ADRENALINE address (e.g. %1)</source>
         <translation>Введите биткоин-адрес (напр. %1)</translation>
     </message>
     <message numerus="yes">
@@ -830,14 +830,14 @@
     </message>
     </context>
 <context>
-    <name>openblock-core</name>
+    <name>adrenaline-core</name>
     <message>
-        <source>OpenBlock Core</source>
-        <translation>OpenBlock Core</translation>
+        <source>ADRENALINE Core</source>
+        <translation>ADRENALINE Core</translation>
     </message>
     <message>
         <source>Whitelisted peers cannot be DoS banned and their transactions are always relayed, even if they are already in the mempool, useful e.g. for a gateway</source>
-        <translation>openblock-core</translation>
+        <translation>adrenaline-core</translation>
     </message>
     <message>
         <source>Information</source>

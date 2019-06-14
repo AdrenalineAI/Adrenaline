@@ -34,7 +34,7 @@ import sys
 import time
 from threading import RLock, Thread
 
-import openblock_scrypt
+import adrenaline_scrypt
 from test_framework.siphash import siphash256
 from test_framework.util import hex_str_to_bytes, bytes_to_hex_str, wait_until
 
@@ -586,7 +586,7 @@ class CBlockHeader(object):
             r += struct.pack("<I", self.nNonce)
             self.sha256 = uint256_from_str(hash256(r))
             self.hash = encode(hash256(r)[::-1], 'hex_codec').decode('ascii')
-            self.scrypt256 = uint256_from_str(openblock_scrypt.getPoWHash(r))
+            self.scrypt256 = uint256_from_str(adrenaline_scrypt.getPoWHash(r))
 
     def rehash(self):
         self.sha256 = None
@@ -1688,7 +1688,7 @@ class NodeConn(asyncore.dispatcher):
             vt.addrFrom.port = 0
             self.send_message(vt, True)
 
-        logger.info('Connecting to OpenBlock Node: %s:%d' % (self.dstaddr, self.dstport))
+        logger.info('Connecting to ADRENALINE Node: %s:%d' % (self.dstaddr, self.dstport))
 
         try:
             self.connect((dstaddr, dstport))

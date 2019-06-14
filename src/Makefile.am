@@ -66,11 +66,11 @@ TESTS =
 BENCHMARKS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += openblockd
+  bin_PROGRAMS += adrenalined
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += openblock-cli openblock-tx
+  bin_PROGRAMS += adrenaline-cli adrenaline-tx
 endif
 
 .PHONY: FORCE check-symbols check-security
@@ -377,16 +377,16 @@ nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
 # bitcoind binary #
-openblockd_SOURCES = bitcoind.cpp
-openblockd_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-openblockd_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-openblockd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+adrenalined_SOURCES = bitcoind.cpp
+adrenalined_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+adrenalined_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+adrenalined_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-openblockd_SOURCES += bitcoind-res.rc
+adrenalined_SOURCES += bitcoind-res.rc
 endif
 
-openblockd_LDADD = \
+adrenalined_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_COMMON) \
   $(LIBUNIVALUE) \
@@ -400,38 +400,38 @@ openblockd_LDADD = \
   $(LIBMEMENV) \
   $(LIBSECP256K1)
 
-openblockd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
+adrenalined_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
 
 # bitcoin-cli binary #
-openblock_cli_SOURCES = bitcoin-cli.cpp
-openblock_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
-openblock_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-openblock_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+adrenaline_cli_SOURCES = bitcoin-cli.cpp
+adrenaline_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
+adrenaline_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+adrenaline_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-openblock_cli_SOURCES += bitcoin-cli-res.rc
+adrenaline_cli_SOURCES += bitcoin-cli-res.rc
 endif
 
-openblock_cli_LDADD = \
+adrenaline_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_UTIL) \
   $(LIBBITCOIN_CRYPTO)
 
-openblock_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
+adrenaline_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
 #
 
 # bitcoin-tx binary #
-openblock_tx_SOURCES = bitcoin-tx.cpp
-openblock_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-openblock_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-openblock_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+adrenaline_tx_SOURCES = bitcoin-tx.cpp
+adrenaline_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+adrenaline_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+adrenaline_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-openblock_tx_SOURCES += bitcoin-tx-res.rc
+adrenaline_tx_SOURCES += bitcoin-tx-res.rc
 endif
 
-openblock_tx_LDADD = \
+adrenaline_tx_LDADD = \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_UTIL) \
@@ -439,7 +439,7 @@ openblock_tx_LDADD = \
   $(LIBBITCOIN_CRYPTO) \
   $(LIBSECP256K1)
 
-openblock_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
+adrenaline_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
 #
 
 # bitcoinconsensus library #

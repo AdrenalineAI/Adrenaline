@@ -16,14 +16,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "OpenBlock"
-            VALUE "FileDescription",    "openblockd (OpenBlock node with a JSON-RPC server)"
+            VALUE "CompanyName",        "ADRENALINE"
+            VALUE "FileDescription",    "adrenalined (ADRENALINE node with a JSON-RPC server)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "openblockd"
+            VALUE "InternalName",       "adrenalined"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "openblockd.exe"
-            VALUE "ProductName",        "openblockd"
+            VALUE "OriginalFilename",   "adrenalined.exe"
+            VALUE "ProductName",        "adrenalined"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

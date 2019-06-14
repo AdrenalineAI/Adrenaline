@@ -62,12 +62,12 @@
         <translation>Vastuvõtvad aadressid</translation>
     </message>
     <message>
-        <source>These are your OpenBlock addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Need on sinu OpenBlock aadressid maksete saatmiseks. Ennem müntide saatmist kontrolli alati summat ja makse saaja aadressi.</translation>
+        <source>These are your ADRENALINE addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Need on sinu ADRENALINE aadressid maksete saatmiseks. Ennem müntide saatmist kontrolli alati summat ja makse saaja aadressi.</translation>
     </message>
     <message>
-        <source>These are your OpenBlock addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Need on sinu OpenBlock aadressid sisenevate maksete vastu võtmiseks. Soovitav on iga tehingu tarbeks kasutada uut aadressi.</translation>
+        <source>These are your ADRENALINE addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Need on sinu ADRENALINE aadressid sisenevate maksete vastu võtmiseks. Soovitav on iga tehingu tarbeks kasutada uut aadressi.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -168,8 +168,8 @@
         <translation>Kinnita rahakoti krüpteerimine.</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR OPENBLOCKS&lt;/b&gt;!</source>
-        <translation>Hoiatus:Kui sa krüpteerid oma rahakoti ja kaotad salafraasi, siis sa&lt;b&gt;KAOTAD OMA OPENBLOCKID&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ADRENALINES&lt;/b&gt;!</source>
+        <translation>Hoiatus:Kui sa krüpteerid oma rahakoti ja kaotad salafraasi, siis sa&lt;b&gt;KAOTAD OMA ADRENALINEID&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -220,7 +220,7 @@
     </message>
     </context>
 <context>
-    <name>OpenBlockGUI</name>
+    <name>ADRENALINEGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Signeeri &amp;sõnum</translation>
@@ -290,8 +290,8 @@
         <translation>Kettal olevate blokkide re-indekseerimine...</translation>
     </message>
     <message>
-        <source>Send coins to a OpenBlock address</source>
-        <translation>Saada münte OpenBlocki aadressile</translation>
+        <source>Send coins to a ADRENALINE address</source>
+        <translation>Saada münte ADRENALINEi aadressile</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -314,8 +314,8 @@
         <translation>&amp;Kontrolli sõnumit...</translation>
     </message>
     <message>
-        <source>OpenBlock</source>
-        <translation>OpenBlock</translation>
+        <source>ADRENALINE</source>
+        <translation>ADRENALINE</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -342,12 +342,12 @@
         <translation>Krüpteeri oma rahakoti privaatvõtmed</translation>
     </message>
     <message>
-        <source>Sign messages with your OpenBlock addresses to prove you own them</source>
-        <translation>Omandi tõestamiseks allkirjasta sõnumid oma OpenBlocki aadressiga</translation>
+        <source>Sign messages with your ADRENALINE addresses to prove you own them</source>
+        <translation>Omandi tõestamiseks allkirjasta sõnumid oma ADRENALINEi aadressiga</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified OpenBlock addresses</source>
-        <translation>Kinnita sõnumid kindlustamaks et need allkirjastati määratud OpenBlocki aadressiga</translation>
+        <source>Verify messages to ensure they were signed with specified ADRENALINE addresses</source>
+        <translation>Kinnita sõnumid kindlustamaks et need allkirjastati määratud ADRENALINEi aadressiga</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -366,20 +366,20 @@
         <translation>Vahelehe tööriistariba</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and openblock: URIs)</source>
-        <translation>Loo maksepäring (genereerib QR koodid ja openblocki: URId)</translation>
+        <source>Request payments (generates QR codes and adrenaline: URIs)</source>
+        <translation>Loo maksepäring (genereerib QR koodid ja adrenalinei: URId)</translation>
     </message>
     <message>
-        <source>Open a openblock: URI or payment request</source>
-        <translation>Ava openblocki: URI või maksepäring</translation>
+        <source>Open a adrenaline: URI or payment request</source>
+        <translation>Ava adrenalinei: URI või maksepäring</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>Käsurea valikud</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to OpenBlock network</source>
-        <translation><numerusform>%n aktiivne ühendus OpenBlocki võrku</numerusform><numerusform>%n aktiivset ühendust OpenBlocki võrku</numerusform></translation>
+        <source>%n active connection(s) to ADRENALINE network</source>
+        <translation><numerusform>%n aktiivne ühendus ADRENALINEi võrku</numerusform><numerusform>%n aktiivset ühendust ADRENALINEi võrku</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -626,8 +626,8 @@
         <translation>Muuda saatvat aadressi</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid OpenBlock address.</source>
-        <translation>Sisestatud aadress "%1" ei ole korrektne OpenBlock aadress.</translation>
+        <source>The entered address "%1" is not a valid ADRENALINE address.</source>
+        <translation>Sisestatud aadress "%1" ei ole korrektne ADRENALINE aadress.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -756,8 +756,8 @@
         <translation>Ekspert</translation>
     </message>
     <message>
-        <source>Automatically open the OpenBlock client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>OpenBlocki kliendi pordi automaatne avamine ruuteris. Toimib, kui sinu ruuter aktsepteerib UPnP ühendust.</translation>
+        <source>Automatically open the ADRENALINE client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>ADRENALINEi kliendi pordi automaatne avamine ruuteris. Toimib, kui sinu ruuter aktsepteerib UPnP ühendust.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -855,7 +855,7 @@
         <translation>Vorm</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the OpenBlock network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the ADRENALINE network after a connection is established, but this process has not completed yet.</source>
         <translation>Kuvatav info ei pruugi olla ajakohane. Ühenduse loomisel süngitakse sinu rahakott automaatselt Bitconi võrgustikuga, kuid see toiming on hetkel lõpetamata.</translation>
     </message>
     <message>
@@ -1337,8 +1337,8 @@
         <translation>Maksepäring aegunud.</translation>
     </message>
     <message>
-        <source>Warning: Invalid OpenBlock address</source>
-        <translation>Hoiatus: Ebakorrektne OpenBlock aadress</translation>
+        <source>Warning: Invalid ADRENALINE address</source>
+        <translation>Hoiatus: Ebakorrektne ADRENALINE aadress</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1417,8 +1417,8 @@
         <translation>&amp;Allkirjastamise teade</translation>
     </message>
     <message>
-        <source>The OpenBlock address to sign the message with</source>
-        <translation>OpenBlock aadress millega sõnum allkirjastada</translation>
+        <source>The ADRENALINE address to sign the message with</source>
+        <translation>ADRENALINE aadress millega sõnum allkirjastada</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1449,8 +1449,8 @@
         <translation>Kopeeri praegune signatuur vahemällu</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this OpenBlock address</source>
-        <translation>Allkirjasta sõnum OpenBlocki aadressi sulle kuulumise tõestamiseks</translation>
+        <source>Sign the message to prove you own this ADRENALINE address</source>
+        <translation>Allkirjasta sõnum ADRENALINEi aadressi sulle kuulumise tõestamiseks</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -1469,12 +1469,12 @@
         <translation>&amp;Kinnita Sõnum</translation>
     </message>
     <message>
-        <source>The OpenBlock address the message was signed with</source>
-        <translation>OpenBlock aadress millega sõnum on allkirjastatud</translation>
+        <source>The ADRENALINE address the message was signed with</source>
+        <translation>ADRENALINE aadress millega sõnum on allkirjastatud</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified OpenBlock address</source>
-        <translation>Kinnita sõnum tõestamaks selle allkirjastatust määratud OpenBlocki aadressiga.</translation>
+        <source>Verify the message to ensure it was signed with the specified ADRENALINE address</source>
+        <translation>Kinnita sõnum tõestamaks selle allkirjastatust määratud ADRENALINEi aadressiga.</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -1732,7 +1732,7 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>openblock-core</name>
+    <name>adrenaline-core</name>
     <message>
         <source>Options:</source>
         <translation>Valikud:</translation>
@@ -1758,8 +1758,8 @@
         <translation>Tööta taustal ning aktsepteeri käsklusi</translation>
     </message>
     <message>
-        <source>OpenBlock Core</source>
-        <translation>OpenBlocki tuumik</translation>
+        <source>ADRENALINE Core</source>
+        <translation>ADRENALINEi tuumik</translation>
     </message>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>

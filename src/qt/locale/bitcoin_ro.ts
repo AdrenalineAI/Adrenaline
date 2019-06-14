@@ -76,7 +76,7 @@
     </message>
 </context>
 <context>
-    <name>OpenBlockGUI</name>
+    <name>ADRENALINEGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Semnează &amp;mesajul...</translation>
@@ -142,8 +142,8 @@
         <translation>Deschide &amp;URI...</translation>
     </message>
     <message>
-        <source>Send coins to a OpenBlock address</source>
-        <translation>Trimite monedele către o adresă OpenBlock</translation>
+        <source>Send coins to a ADRENALINE address</source>
+        <translation>Trimite monedele către o adresă ADRENALINE</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -166,8 +166,8 @@
         <translation>&amp;Verifică mesajul...</translation>
     </message>
     <message>
-        <source>OpenBlock</source>
-        <translation>OpenBlock</translation>
+        <source>ADRENALINE</source>
+        <translation>ADRENALINE</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -194,12 +194,12 @@
         <translation>Criptează cheile private care aparțin portofelului tău.</translation>
     </message>
     <message>
-        <source>Sign messages with your OpenBlock addresses to prove you own them</source>
-        <translation>Semnează mesajele cu adresa ta de OpenBlock pentru a face dovada că îți aparțin.</translation>
+        <source>Sign messages with your ADRENALINE addresses to prove you own them</source>
+        <translation>Semnează mesajele cu adresa ta de ADRENALINE pentru a face dovada că îți aparțin.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified OpenBlock addresses</source>
-        <translation>Verifică mesajele cu scopul de a asigura faptul că au fost semnate cu adresa de OpenBlock specificată.</translation>
+        <source>Verify messages to ensure they were signed with specified ADRENALINE addresses</source>
+        <translation>Verifică mesajele cu scopul de a asigura faptul că au fost semnate cu adresa de ADRENALINE specificată.</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -214,12 +214,12 @@
         <translation>&amp;Ajutor</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and openblock: URIs)</source>
-        <translation>Cerere plată (generează coduri QR și openblock: URIs)</translation>
+        <source>Request payments (generates QR codes and adrenaline: URIs)</source>
+        <translation>Cerere plată (generează coduri QR și adrenaline: URIs)</translation>
     </message>
     <message>
-        <source>Open a openblock: URI or payment request</source>
-        <translation>Deschide un openblock: URI sau cerere de plată</translation>
+        <source>Open a adrenaline: URI or payment request</source>
+        <translation>Deschide un adrenaline: URI sau cerere de plată</translation>
     </message>
     <message>
         <source>%1 behind</source>
@@ -746,10 +746,10 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>openblock-core</name>
+    <name>adrenaline-core</name>
     <message>
-        <source>OpenBlock Core</source>
-        <translation>OpenBlock Core</translation>
+        <source>ADRENALINE Core</source>
+        <translation>ADRENALINE Core</translation>
     </message>
     <message>
         <source>Information</source>

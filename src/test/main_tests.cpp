@@ -39,7 +39,7 @@ static void TestBlockSubsidyHalvings(int nSubsidyHalvingInterval)
 
 BOOST_AUTO_TEST_CASE(block_subsidy_test)
 {
-    // OpenBlock: doesn't do generic halvings, so we test for the expected subsidy schedule
+    // ADRENALINE: doesn't do generic halvings, so we test for the expected subsidy schedule
     const auto chainParams = CreateChainParams(CBaseChainParams::MAIN);
     //TestBlockSubsidyHalvings(chainParams->GetConsensus()); // As in main
     //TestBlockSubsidyHalvings(150); // As in regtest

@@ -1479,7 +1479,7 @@ void ThreadMapPort()
             }
         }
 
-        std::string strDesc = "OpenBlock " + FormatFullVersion();
+        std::string strDesc = "ADRENALINE " + FormatFullVersion();
 
         try {
             while (true) {

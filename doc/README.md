@@ -1,40 +1,40 @@
-OpenBlock Core
+ADRENALINE Core
 =============
 
 Setup
 ---------------------
-OpenBlock Core is the original OpenBlock client and it builds the backbone of the network. It downloads and, by default, stores the entire history of OpenBlock transactions (which is currently more than 7 GBs); depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
+ADRENALINE Core is the original ADRENALINE client and it builds the backbone of the network. It downloads and, by default, stores the entire history of ADRENALINE transactions (which is currently more than 7 GBs); depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
 
-To download OpenBlock Core, visit [viacoin.org](https://openblock.org).
+To download ADRENALINE Core, visit [viacoin.org](https://adrenaline.org).
 
 Running
 ---------------------
-The following are some helpful notes on how to run OpenBlock on your native platform.
+The following are some helpful notes on how to run ADRENALINE on your native platform.
 
 ### Unix
 
 Unpack the files into a directory and run:
 
-- `bin/openblock-qt` (GUI) or
-- `bin/openblockd` (headless)
+- `bin/adrenaline-qt` (GUI) or
+- `bin/adrenalined` (headless)
 
 ### Windows
 
-Unpack the files into a directory, and then run openblock-qt.exe.
+Unpack the files into a directory, and then run adrenaline-qt.exe.
 
 ### OS X
 
-Drag OpenBlock-Core to your applications folder, and then run OpenBlock-Core.
+Drag ADRENALINE-Core to your applications folder, and then run ADRENALINE-Core.
 
 ### Need Help?
 
-* See the documentation at the [OpenBlock Wiki](https://openblock.info/)
+* See the documentation at the [ADRENALINE Wiki](https://adrenaline.info/)
 for help and more information.
-* Ask for help on [#openblock](http://webchat.freenode.net?channels=openblock) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=openblock).
+* Ask for help on [#adrenaline](http://webchat.freenode.net?channels=adrenaline) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=adrenaline).
 
 Building
 ---------------------
-The following are developer notes on how to build OpenBlock on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+The following are developer notes on how to build ADRENALINE on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
 - [OS X Build Notes](build-osx.md)
 - [Unix Build Notes](build-unix.md)
@@ -44,12 +44,12 @@ The following are developer notes on how to build OpenBlock on your native platf
 
 Development
 ---------------------
-The OpenBlock repo's [root README](/README.md) contains relevant information on the development process and automated testing.
+The ADRENALINE repo's [root README](/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Release Notes](release-notes.md)
 - [Release Process](release-process.md)
-- [Source Code Documentation (External Link)](https://dev.visucore.com/openblock/doxygen/)
+- [Source Code Documentation (External Link)](https://dev.visucore.com/adrenaline/doxygen/)
 - [Translation Process](translation_process.md)
 - [Translation Strings Policy](translation_strings_policy.md)
 - [Travis CI](travis-ci.md)
@@ -60,7 +60,7 @@ The OpenBlock repo's [root README](/README.md) contains relevant information on 
 - [Benchmarking](benchmarking.md)
 
 ### Resources
-* Discuss general OpenBlock development on #openblock-dev on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=openblock-dev).
+* Discuss general ADRENALINE development on #adrenaline-dev on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=adrenaline-dev).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)
